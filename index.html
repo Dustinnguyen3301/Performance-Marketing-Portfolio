@@ -49,26 +49,28 @@
         </div>
       </div>
 
-      <div class="hero-visual" aria-label="Abstract data visualization">
-        <div class="visual-top"><span>PERFORMANCE OVERVIEW</span><span>LIVE / INSIGHT</span></div>
-        <div class="visual-grid"></div>
-        <div class="chart-label label-one">Growth</div>
-        <div class="chart-label label-two">Performance</div>
-        <div class="chart-value">+140<span>%</span></div>
-        <div class="chart-caption">Sales Revenue (Vs 2023)</div>
-        <svg class="chart" viewBox="0 0 520 260" role="img" aria-label="Decorative upward trend line">
-          <defs>
-            <linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#2563EB" stop-opacity=".28"/>
-              <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
-            </linearGradient>
-          </defs>
-          <path class="chart-area" d="M0 225 C45 210 55 190 95 198 S150 160 190 174 S250 115 290 135 S350 85 390 102 S450 35 520 20 L520 260 L0 260 Z"/>
-          <path class="chart-line" d="M0 225 C45 210 55 190 95 198 S150 160 190 174 S250 115 290 135 S350 85 390 102 S450 35 520 20"/>
-          <circle cx="520" cy="20" r="5" class="chart-point"/>
-        </svg>
-        <div class="visual-bottom"><span>INSIGHT → ACTION</span><span>10/2024</span></div>
-      </div>
+      <aside class="hero-visual experience-panel" aria-labelledby="experience-title">
+        <div class="visual-grid" aria-hidden="true"></div>
+        <div class="experience-heading"><span class="experience-status" aria-hidden="true"></span><h2 id="experience-title">Experience at a glance</h2></div>
+        <dl class="experience-stats">
+          <div class="experience-budget">
+            <dt>Average media budget managed</dt>
+            <dd><span class="experience-currency">VND</span> <span class="experience-budget-value">5B<span class="experience-plus">+</span></span><span class="experience-period">/ month</span></dd>
+          </div>
+          <div class="experience-stat">
+            <dt>Brands</dt>
+            <dd>20<span class="experience-plus">+</span></dd>
+            <p>Experience across diverse industries</p>
+          </div>
+          <div class="experience-stat">
+            <dt>Analytics &amp; attribution tools</dt>
+            <dd>5<span class="experience-plus">+</span></dd>
+            <p>GA4 · AppsFlyer<br>Firebase · Branch</p>
+          </div>
+        </dl>
+        <div class="experience-industries" aria-label="Industry experience"><span>Fintech</span><span>Retail</span><span>Real Estate</span></div>
+        <div class="experience-footer"><span>STRATEGY → EXECUTION → INSIGHT</span><a href="#work">Explore my work <span aria-hidden="true">↗</span></a></div>
+      </aside>
     </section>
 
     <section class="metrics section-wrap" aria-label="Portfolio highlights">
@@ -99,7 +101,7 @@
       <div class="work-categories">
         <div class="work-category">
           <h3 class="work-category-title">Beauty &amp; Personal Care</h3>
-          <a class="project-row project-avene" href="#contact" aria-label="View Avène case study">
+          <a class="project-row project-avene" href="#case-avene" aria-label="View Avène case study">
             <div class="project-brand"><span class="project-name">Avène</span></div>
             <div class="project-summary">
               <h4>Sales Conversion</h4>
@@ -110,13 +112,13 @@
               <span class="project-metric__label">Revenue Growth</span>
               <span class="project-metric__period">2024 vs. 2023</span>
             </div>
-            <span class="project-arrow" aria-hidden="true">↗</span>
+            <span class="project-arrow">View project <span aria-hidden="true">↓</span></span>
           </a>
         </div>
 
         <div class="work-category">
           <h3 class="work-category-title">Technology Accessories</h3>
-          <a class="project-row project-logitech" href="#contact" aria-label="View Logitech case study">
+          <a class="project-row project-logitech" href="#case-logitech" aria-label="View Logitech case study">
             <div class="project-brand"><span class="project-name">Logitech</span></div>
             <div class="project-summary">
               <h4>Sales Conversion</h4>
@@ -127,13 +129,13 @@
               <span class="project-metric__label">ROAS</span>
               <span class="project-metric__period">Sustained over 10 months</span>
             </div>
-            <span class="project-arrow" aria-hidden="true">↗</span>
+            <span class="project-arrow">View project <span aria-hidden="true">↓</span></span>
           </a>
         </div>
 
         <div class="work-category">
           <h3 class="work-category-title">Finance Services</h3>
-          <a class="project-row project-homecredit" href="#contact" aria-label="View Home Credit case study">
+          <a class="project-row project-homecredit" href="#case-homecredit" aria-label="View Home Credit case study">
             <div class="project-brand"><span class="project-name">Home Credit</span></div>
             <div class="project-summary">
               <h4>Brand Awareness</h4>
@@ -144,12 +146,54 @@
               <span class="project-metric__label">Brand Uplift</span>
               <span class="project-metric__period">Campaign result</span>
             </div>
-            <span class="project-arrow" aria-hidden="true">↗</span>
+            <span class="project-arrow">View project <span aria-hidden="true">↓</span></span>
           </a>
         </div>
       </div>
       <p class="note">Project highlights are illustrative. Replace each metric and campaign detail with verified results before publishing.</p>
     </section>
+
+<div class="case-studies section-wrap" aria-label="Project case studies">
+<section class="case-study project-avene" id="case-avene" aria-labelledby="title-avene">
+  <a class="case-back" href="#work">← Back to Selected Work</a>
+  <header class="case-header"><div><p class="case-kicker">PROJECT / SALES CONVERSION</p><h2 id="title-avene">Avène</h2><p class="case-channels">FACEBOOK · TIKTOK · SHOPEE · LAZADA · 2024</p></div>
+  <div class="case-result"><strong>+140%</strong><span>Revenue Growth</span><small>2024 vs. 2023</small></div></header>
+  <p class="case-status">Case study draft · Metrics carried over from the portfolio; verify before publishing.</p>
+  <div class="case-grid">
+    <article><span class="case-number">01 / CONTEXT</span><h3>Background &amp; objective</h3><p class="case-placeholder">To add: business challenge, target audience and campaign objective.</p></article>
+    <article><span class="case-number">02 / OWNERSHIP</span><h3>My role &amp; scope</h3><p class="case-placeholder">To add: responsibilities, collaborators and project timeline.</p></article>
+    <article><span class="case-number">03 / APPROACH</span><h3>Strategy &amp; execution</h3><p class="case-placeholder">To add: channel strategy, creative approach and key optimization decisions.</p></article>
+    <article><span class="case-number">04 / IMPACT</span><h3>Results &amp; learnings</h3><p class="case-placeholder">To add: verified KPIs, comparison period and the learning behind the result.</p></article>
+  </div>
+  <details class="case-evidence"><summary>Campaign visuals &amp; supporting evidence</summary><p class="case-placeholder">To add: campaign images, reporting screenshots and supporting data.</p></details>
+</section>
+<section class="case-study project-logitech" id="case-logitech" aria-labelledby="title-logitech">
+  <a class="case-back" href="#work">← Back to Selected Work</a>
+  <header class="case-header"><div><p class="case-kicker">PROJECT / SALES CONVERSION</p><h2 id="title-logitech">Logitech</h2><p class="case-channels">FACEBOOK · TIKTOK · SHOPEE · 2024</p></div>
+  <div class="case-result"><strong>22.1x</strong><span>ROAS</span><small>Sustained over 10 months</small></div></header>
+  <p class="case-status">Case study draft · Metrics carried over from the portfolio; verify before publishing.</p>
+  <div class="case-grid">
+    <article><span class="case-number">01 / CONTEXT</span><h3>Background &amp; objective</h3><p class="case-placeholder">To add: business challenge, target audience and campaign objective.</p></article>
+    <article><span class="case-number">02 / OWNERSHIP</span><h3>My role &amp; scope</h3><p class="case-placeholder">To add: responsibilities, collaborators and project timeline.</p></article>
+    <article><span class="case-number">03 / APPROACH</span><h3>Strategy &amp; execution</h3><p class="case-placeholder">To add: channel strategy, creative approach and key optimization decisions.</p></article>
+    <article><span class="case-number">04 / IMPACT</span><h3>Results &amp; learnings</h3><p class="case-placeholder">To add: verified KPIs, comparison period and the learning behind the result.</p></article>
+  </div>
+  <details class="case-evidence"><summary>Campaign visuals &amp; supporting evidence</summary><p class="case-placeholder">To add: campaign images, reporting screenshots and supporting data.</p></details>
+</section>
+<section class="case-study project-homecredit" id="case-homecredit" aria-labelledby="title-homecredit">
+  <a class="case-back" href="#work">← Back to Selected Work</a>
+  <header class="case-header"><div><p class="case-kicker">PROJECT / BRAND AWARENESS</p><h2 id="title-homecredit">Home Credit</h2><p class="case-channels">DIGITAL CAMPAIGN · 2025–2026</p></div>
+  <div class="case-result"><strong>+160%</strong><span>Brand Uplift</span><small>Campaign result</small></div></header>
+  <p class="case-status">Case study draft · Metrics carried over from the portfolio; verify before publishing.</p>
+  <div class="case-grid">
+    <article><span class="case-number">01 / CONTEXT</span><h3>Background &amp; objective</h3><p class="case-placeholder">To add: business challenge, target audience and campaign objective.</p></article>
+    <article><span class="case-number">02 / OWNERSHIP</span><h3>My role &amp; scope</h3><p class="case-placeholder">To add: responsibilities, collaborators and project timeline.</p></article>
+    <article><span class="case-number">03 / APPROACH</span><h3>Strategy &amp; execution</h3><p class="case-placeholder">To add: channel strategy, creative approach and key optimization decisions.</p></article>
+    <article><span class="case-number">04 / IMPACT</span><h3>Results &amp; learnings</h3><p class="case-placeholder">To add: verified KPIs, comparison period and the learning behind the result.</p></article>
+  </div>
+  <details class="case-evidence"><summary>Campaign visuals &amp; supporting evidence</summary><p class="case-placeholder">To add: campaign images, reporting screenshots and supporting data.</p></details>
+</section>
+</div>
 
     <section class="about-section section-wrap" id="about">
       <div><p class="eyebrow">A LITTLE ABOUT ME</p><h2>Curious by nature.<br><span class="accent">Driven by data.</span></h2></div>
