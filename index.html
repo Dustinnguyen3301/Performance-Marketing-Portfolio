@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=contact-2" />
+  <link rel="stylesheet" href="style.css?v=about-portrait-1" />
 </head>
 <body>
   <header class="site-header">
@@ -154,8 +154,16 @@
     </section>
 
     <section class="about-section section-wrap" id="about">
-      <div><p class="eyebrow">A LITTLE ABOUT ME</p><h2>Curious by nature.<br><span class="accent">Driven by data.</span></h2></div>
-      <p class="about-copy">I’m a digital marketer who believes great marketing starts with the right questions. I bring together strategic thinking, analytical skills, and a continuous-improvement mindset to turn performance data into meaningful business decisions.</p>
+      <figure class="about-portrait">
+        <!-- Upload your portrait as portrait.jpg alongside index.html. -->
+        <img class="about-photo" src="portrait.jpg" alt="Portrait of Dustin Nguyen" width="800" height="1000" loading="lazy" hidden />
+        <div class="portrait-placeholder"><span class="portrait-monogram" aria-hidden="true">DN</span><span>Portrait coming soon</span></div>
+      </figure>
+      <div class="about-content">
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <h2>Curious by nature.<br><span class="accent">Driven by data.</span></h2>
+        <p class="about-copy">I’m a digital marketer who believes great marketing starts with the right questions. I bring together strategic thinking, analytical skills, and a continuous-improvement mindset to turn performance data into meaningful business decisions.</p>
+      </div>
     </section>
 
     <section class="contact-section section-wrap" id="contact" aria-labelledby="contact-title">
@@ -183,6 +191,14 @@
   <footer class="site-footer section-wrap"><a class="brand" href="#home"><span class="brand-name">Dustin Nguyen</span><span class="brand-role">// Digital Marketer</span></a><span>© <span id="year">2026</span> · Built with intention.</span><a href="#home" class="back-top">Back to top ↑</a></footer>
 
   <script>
+    const portrait = document.querySelector('.about-photo');
+    function showPortrait() {
+      if (!portrait?.naturalWidth) return;
+      portrait.hidden = false;
+      document.querySelector('.portrait-placeholder').hidden = true;
+    }
+    portrait?.addEventListener('load', showPortrait);
+    if (portrait?.complete) showPortrait();
     const toggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.main-nav');
     toggle?.addEventListener('click', () => {
