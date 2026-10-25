@@ -33,7 +33,7 @@ button { font: inherit; }
 }
 .brand { display: inline-flex; flex-direction: column; line-height: 1.15; flex-shrink: 0; }
 .brand-name { font-size: 1.16rem; font-weight: 800; letter-spacing: -.06em; }
-.brand-role { font-family: var(--mono); font-size: .68rem; color: var(--accent-bright); letter-spacing: .04em; }
+.brand-role { font-family: var(--mono); font-size: .75rem; color: var(--accent-bright); letter-spacing: .04em; }
 .main-nav { display: flex; align-items: center; gap: 8px; }
 .nav-link { color: var(--muted); font-size: .85rem; padding: 10px 15px; border-radius: 9px; transition: .2s ease; }
 .nav-link:hover, .nav-link.active { color: var(--text); background: var(--surface-2); }
@@ -80,7 +80,7 @@ button { font: inherit; }
 .experience-stat + .experience-stat { border-left: 1px solid var(--line); padding-left: 24px; padding-right: 0; }
 .experience-stat dt { min-height: 2.9em; }
 .experience-stat dd { font-size: clamp(2.6rem, 4vw, 3.3rem); margin-top: 8px; }
-.experience-stat p { color: var(--muted); font-size: .73rem; line-height: 1.7; margin: 20px 0 0; }
+.experience-stat p { color: var(--muted); font-size: .83rem; line-height: 1.7; margin: 10px 0 0; }
 .experience-industries { display: flex; flex-wrap: wrap; gap: 7px; }
 .experience-industries span { padding: 5px 9px; border: 1px solid #ffffff1f; background: #ffffff04; border-radius: 5px; color: #b4b4b4; font: .6rem/1.5 var(--mono); }
 .experience-footer { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; border-top: 1px solid var(--line); padding-top: 20px; margin-top: 24px; }
