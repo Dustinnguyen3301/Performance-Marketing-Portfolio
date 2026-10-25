@@ -80,7 +80,7 @@ button { font: inherit; }
 .experience-stat + .experience-stat { border-left: 1px solid var(--line); padding-left: 24px; padding-right: 0; }
 .experience-stat dt { min-height: 2.9em; }
 .experience-stat dd { font-size: clamp(2.6rem, 4vw, 3.3rem); margin-top: 8px; }
-.experience-stat p { color: var(--muted); font-size: .73rem; line-height: 1.7; margin: 10px 0 0; }
+.experience-stat p { color: var(--muted); font-size: .73rem; line-height: 1.7; margin: 20px 0 0; }
 .experience-industries { display: flex; flex-wrap: wrap; gap: 7px; }
 .experience-industries span { padding: 5px 9px; border: 1px solid #ffffff1f; background: #ffffff04; border-radius: 5px; color: #b4b4b4; font: .6rem/1.5 var(--mono); }
 .experience-footer { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; border-top: 1px solid var(--line); padding-top: 20px; margin-top: 24px; }
