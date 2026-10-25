@@ -106,7 +106,7 @@ button { font: inherit; }
 .expertise-card:hover { border-color: rgba(37,99,235,.65); transform: translateY(-3px); }
 .card-index { font: .64rem var(--mono); color: var(--accent-bright); letter-spacing: .08em; }
 .expertise-card h3 { font-size: 1.28rem; margin: 22px 0 8px; letter-spacing: -.04em; }
-.expertise-card p { color: var(--muted); font-size: .84rem; max-width: 440px; margin: 0; }
+.expertise-card p { color: var(--muted); font-size: .95rem; max-width: 440px; margin: 0; }
 .card-arrow { position: absolute; top: 24px; right: 26px; color: #777; }
 
 /* Portfolio work */
