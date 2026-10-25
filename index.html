@@ -158,14 +158,29 @@
       <p class="about-copy">I’m a digital marketer who believes great marketing starts with the right questions. I bring together strategic thinking, analytical skills, and a continuous-improvement mindset to turn performance data into meaningful business decisions.</p>
     </section>
 
-    <section class="contact-section section-wrap" id="contact">
-      <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
-      <h2>Let’s make data<br><span class="accent">work for you.</span></h2>
-      <a class="button button-primary" href="mailto:hello@example.com">Get in touch <span aria-hidden="true">↗</span></a>
+    <section class="contact-section section-wrap" id="contact" aria-labelledby="contact-title">
+      <p class="eyebrow">LET’S CONNECT</p>
+      <h2 id="contact-title">Great work starts<br><span class="accent">with a conversation.</span></h2>
+      <p class="contact-intro">For opportunities, collaborations, or a conversation about marketing.</p>
+      <div class="contact-grid">
+        <div class="contact-card"><span class="contact-label">01 / EMAIL</span><a data-contact="email" hidden></a><span data-pending="email">Email to be added</span><small>For opportunities &amp; collaborations</small></div>
+        <div class="contact-card"><span class="contact-label">02 / LINKEDIN</span><a data-contact="linkedin" target="_blank" rel="noopener noreferrer" hidden>Connect on LinkedIn ↗</a><span data-pending="linkedin">LinkedIn to be added</span><small>Let’s grow our professional network</small></div>
+        <div class="contact-card"><span class="contact-label">03 / PHONE</span><a data-contact="phone" hidden></a><span data-pending="phone">Phone to be added</span><small>Calls within Vietnam only</small></div>
+      </div>
+      <button class="button button-primary contact-trigger" type="button" aria-haspopup="dialog" aria-controls="contact-dialog">Contact now <span aria-hidden="true">↗</span></button>
+      <dialog id="contact-dialog" class="contact-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-copy">
+        <form method="dialog"><button class="dialog-close" aria-label="Close contact options">×</button></form>
+        <p class="eyebrow">LET’S CONNECT</p><h3 id="dialog-title">How would you like to connect?</h3>
+        <p id="dialog-copy">Choose email or phone to start a conversation.</p>
+        <div class="contact-options">
+          <div class="contact-option"><span class="contact-label">EMAIL</span><a data-contact="email" hidden></a><span data-pending="email">Email to be added</span><small>Send a message</small></div>
+          <div class="contact-option"><span class="contact-label">PHONE</span><a data-contact="phone" hidden></a><span data-pending="phone">Phone to be added</span><small>Vietnam only · Calls within Vietnam</small></div>
+        </div>
+      </dialog>
     </section>
   </main>
 
-  <footer class="site-footer section-wrap"><a class="brand" href="#home"><span class="brand-name">YOUR NAME</span><span class="brand-role">// Digital Marketer</span></a><span>© <span id="year">2026</span> · Built with intention.</span><a href="#home" class="back-top">Back to top ↑</a></footer>
+  <footer class="site-footer section-wrap"><a class="brand" href="#home"><span class="brand-name">Dustin Nguyen</span><span class="brand-role">// Digital Marketer</span></a><span>© <span id="year">2026</span> · Built with intention.</span><a href="#home" class="back-top">Back to top ↑</a></footer>
 
   <script>
     const toggle = document.querySelector('.menu-toggle');
@@ -178,6 +193,33 @@
       nav.classList.remove('is-open');
       toggle?.setAttribute('aria-expanded', 'false');
     }));
+
+    // Add your public contact details here. Use an international phone format, e.g. +84...
+    const contactDetails = { email: 'thanhnguyen3301.work@gmail.com', linkedin: 'https://www.linkedin.com/in/nguyen-thanh-nguyen-090122398/', phone: '+84 829 299 553' };
+    for (const [kind, rawValue] of Object.entries(contactDetails)) {
+      const value = rawValue.trim();
+      if (!value) continue;
+      let href;
+      if (kind === 'email' && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) href = 'mailto:' + value;
+      if (kind === 'phone' && /^\+?[\d\s().-]{7,}$/.test(value)) href = 'tel:' + value.replace(/[^+\d]/g, '');
+      if (kind === 'linkedin') {
+        try { const url = new URL(value); if (url.protocol === 'https:' && /^(www\.)?linkedin\.com$/.test(url.hostname)) href = url.href; } catch {}
+      }
+      if (!href) continue;
+      document.querySelectorAll('[data-contact="' + kind + '"]').forEach(link => {
+        link.href = href;
+        if (kind !== 'linkedin') link.textContent = value;
+        link.hidden = false;
+      });
+      document.querySelectorAll('[data-pending="' + kind + '"]').forEach(label => { label.hidden = true; });
+    }
+    const contactDialog = document.querySelector('#contact-dialog');
+    document.querySelector('.contact-trigger')?.addEventListener('click', () => contactDialog.showModal());
+    contactDialog?.addEventListener('click', event => {
+      const rect = contactDialog.getBoundingClientRect();
+      if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) contactDialog.close();
+    });
+
     document.querySelector('#year').textContent = new Date().getFullYear();
   </script>
 </body>
