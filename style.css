@@ -438,3 +438,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   letter-spacing: 0.04em;
   color: #b4b4b4;
 }
+.experience-industries {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 7px;
+}
+
+.experience-industries .industry-new-line {
+  grid-column: 1 / -1;
+  justify-self: start;
+}
