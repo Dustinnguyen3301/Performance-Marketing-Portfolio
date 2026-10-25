@@ -156,8 +156,8 @@
     <section class="about-section section-wrap" id="about">
       <figure class="about-portrait">
         <!-- Upload your portrait as portrait.jpg alongside index.html. -->
-        <img class="about-photo" src="portrait.jpg" alt="Portrait of Dustin Nguyen" width="800" height="1000" loading="lazy" hidden />
-        <div class="portrait-placeholder"><span class="portrait-monogram" aria-hidden="true">DN</span><span>Portrait coming soon</span></div>
+        <img class="about-photo" src="portrait.jpg?v=1" alt="Portrait of Dustin Nguyen" width="800" height="1000" loading="eager" />
+        <div class="portrait-placeholder" style="position: absolute; inset: 0;"><span class="portrait-monogram" aria-hidden="true">DN</span><span>Portrait coming soon</span></div>
       </figure>
       <div class="about-content">
         <p class="eyebrow">A LITTLE ABOUT ME</p>
@@ -198,6 +198,7 @@
       document.querySelector('.portrait-placeholder').hidden = true;
     }
     portrait?.addEventListener('load', showPortrait);
+    portrait?.addEventListener('error', () => { portrait.hidden = true; document.querySelector('.portrait-placeholder').hidden = false; });
     if (portrait?.complete) showPortrait();
     const toggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.main-nav');
