@@ -430,3 +430,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
     max-width: 250px;
   }
 }
+.section-heading .eyebrow {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.35rem; /* khoảng 22px */
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #b4b4b4;
+}
