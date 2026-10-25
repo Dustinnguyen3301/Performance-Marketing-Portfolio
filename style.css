@@ -324,3 +324,37 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .case-page-main { padding-block: 42px 80px; }
 .case-page .case-study { min-height: 65vh; }
 @media (max-width: 640px) { .case-page-main { padding-block: 24px 50px; } }
+
+/* Contact information and native modal chooser. */
+.contact-intro { color: var(--muted); max-width: 480px; margin: 24px auto 0; font-size: .9rem; }
+.contact-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; margin-top: 40px; text-align: left; }
+.contact-card, .contact-option { min-width: 0; border: 1px solid var(--line); border-radius: 12px; padding: 24px; background: var(--surface); display: flex; flex-direction: column; gap: 12px; }
+.contact-label { font: .65rem/1.6 var(--mono); letter-spacing: .08em; color: #93b4ff; }
+.contact-card a, .contact-option a { font-size: .95rem; font-weight: 700; overflow-wrap: anywhere; }
+.contact-card a:hover, .contact-option a:hover { color: #93b4ff; text-decoration: underline; text-underline-offset: 4px; }
+.contact-card small, .contact-option small { color: var(--muted); font-size: .74rem; }
+[data-pending] { color: var(--muted); font-size: .9rem; }
+.contact-trigger { border: 0; cursor: pointer; }
+.contact-dialog { width: min(560px, calc(100% - 36px)); max-height: calc(100dvh - 48px); overflow-y: auto; background: #151515; color: var(--text); border: 1px solid #ffffff29; border-radius: 18px; padding: 32px; text-align: left; box-shadow: 0 24px 90px #0008; }
+.contact-dialog::backdrop { background: #000b; backdrop-filter: blur(5px); }
+.contact-dialog h3 { font-size: clamp(1.5rem,4vw,2rem); line-height: 1.2; letter-spacing: -.04em; margin: 0; max-width: 390px; }
+.contact-dialog #dialog-copy { color: var(--muted); font-size: .87rem; }
+.dialog-close { position: absolute; right: 14px; top: 10px; border: 0; background: transparent; color: var(--muted); cursor: pointer; font-size: 1.7rem; padding: 0 8px; }
+.contact-options { display: grid; gap: 12px; margin-top: 24px; }
+.contact-dialog .eyebrow { padding-right: 25px; }
+[hidden] { display: none !important; }
+@media (max-width: 640px) { .contact-grid { grid-template-columns: 1fr; gap: 12px; margin-top: 28px; } .contact-dialog { padding: 28px 22px; } }
+
+/* Contact refinement: quiet typography and three aligned information rows. */
+.contact-section h2 { font-size: clamp(2.5rem,5vw,4rem); }
+.contact-grid { display: flex; flex-direction: column; max-width: 640px; margin: 36px auto 0; gap: 0; }
+.contact-card { display: grid; grid-template-columns: 100px minmax(0,1fr) auto; align-items: baseline; gap: 12px; padding: 19px 0; background: transparent; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; }
+.contact-card .contact-label { color: var(--muted); font-size: .65rem; }
+.contact-card a { font-size: .9rem; font-weight: 500; line-height: 1.7; }
+.contact-card small { font-size: .66rem; }
+.contact-section .contact-trigger { margin-top: 32px; }
+@media (max-width: 640px) {
+ .contact-card { grid-template-columns: 76px minmax(0,1fr); gap: 8px 12px; padding-block: 17px; }
+ .contact-card a { font-size: .8rem; }
+ .contact-card small { grid-column: 2; }
+}
