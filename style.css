@@ -461,3 +461,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .work-category h3.work-category-title--finance {
   margin-top: 48px;
 }
+.project-homecredit + .project-homecredit {
+  margin-top: 40px;
+}
+
+@media (max-width: 640px) {
+  .project-homecredit + .project-homecredit {
+    margin-top: 24px;
+  }
+}
