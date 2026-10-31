@@ -70,7 +70,32 @@
     grid-template-columns: 1fr;
   }
 }
+.achievement-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 28px;
+  width: 100%;
+  max-width: none;
+}
 
+.achievement-grid > .achievement-item {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+}
+
+.achievement-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Điện thoại: một cột */
+@media (max-width: 640px) {
+  .achievement-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
   </style>
 </head>
 <body class="case-page">
