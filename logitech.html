@@ -37,6 +37,40 @@
       .project-logitech .project-copy { text-align: left; }
       .project-roles > div, .project-points > div { padding: 18px; }
     }
+
+.project-logitech .achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  width: 100%;
+  max-width: none;
+}
+
+.project-logitech .achievement-item {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  margin: 0;
+}
+
+.project-logitech .achievement-frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.project-logitech .achievement-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 640px) {
+  .project-logitech .achievement-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
   </style>
 </head>
 <body class="case-page">
