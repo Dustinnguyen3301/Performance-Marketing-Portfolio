@@ -9,10 +9,39 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .project-homecredit .case-grid { grid-template-columns: minmax(0, 1fr); gap: 42px; }
+    .project-homecredit .case-grid > article { grid-column: 1 / -1; padding-top: 30px; }
+    .project-homecredit .case-grid h3, .project-homecredit .achievement-section h3 { margin: 12px 0 24px; font-size: clamp(1.4rem, 2.5vw, 1.9rem); font-weight: 800; line-height: 1.25; letter-spacing: -.04em; color: #b51420; }
+    .project-homecredit .case-number { font-family: var(--font); font-size: .73rem; font-weight: 700; letter-spacing: .08em; color: #686868; }
+    .project-homecredit .project-copy { max-width: none; color: #525252; font-size: .95rem; line-height: 1.9; margin: 12px 0 0; text-align: justify; hyphens: auto; }
+    .project-roles, .project-points { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px 40px; margin: 0; }
+    .project-roles > div, .project-points > div { min-width: 0; padding: 20px 22px; background: #fafafa; border-left: 2px solid #e31e2440; border-radius: 0 8px 8px 0; }
+    .project-roles dt, .project-points dt { color: #111; font-size: .94rem; font-weight: 800; line-height: 1.5; }
+    .project-roles dd, .project-points dd { color: #525252; font-size: .9rem; line-height: 1.85; margin: 9px 0 0; }
+    .achievement-section { border-top: 1px solid #dedede; padding-top: 30px; margin-top: 42px; }
+    .achievement-intro { font-size: .88rem; line-height: 1.8; color: #606060; margin: -10px 0 24px; }
+    .achievement-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; }
+    .achievement-item { min-width: 0; margin: 0; }
+    .achievement-frame { position: relative; aspect-ratio: 1677 / 938; display: grid; place-items: center; background: #fafafa; border: 1px solid #e7dfd9; border-radius: 10px; overflow: hidden; }
+    .achievement-frame [hidden] { display: none !important; }
+    .achievement-frame a { display: block; width: 100%; height: 100%; }
+    .achievement-frame img { display: block; width: 100%; height: 100%; object-fit: contain; }
+    .achievement-placeholder { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: #74706c; font-size: .8rem; text-align: center; padding: 20px; }
+    .achievement-placeholder b { font-size: 1.5rem; font-weight: 500; color: #b51420; }
+    .achievement-item figcaption { margin-top: 12px; font-size: .83rem; font-weight: 700; color: #333; }
+    .project-homecredit [hidden] { display: none !important; }
+    @media (max-width: 640px) {
+      .project-roles, .project-points, .achievement-grid { grid-template-columns: minmax(0,1fr); gap: 18px; }
+      .project-homecredit .case-grid { gap: 30px; }
+      .project-homecredit .project-copy { text-align: left; }
+      .project-roles > div, .project-points > div { padding: 18px; }
+    }
+  </style>
 </head>
 <body class="case-page">
   <header class="site-header">
-    <a class="brand" href="index.html#home" aria-label="Your Name home">
+    <a class="brand" href="index.html#home" aria-label="Dustin Nguyen home">
       <span class="brand-name">Dustin Nguyen</span>
       <span class="brand-role">// Performance Marketing Specialist</span>
     </a>
@@ -36,17 +65,47 @@
   <header class="case-header"><div><p class="case-kicker">PROJECT / BRAND AWARENESS</p><h2 id="title-homecredit">Home Credit</h2><p class="case-channels">DIGITAL CAMPAIGN · 2025–2026</p></div>
   <div class="case-result"><strong>+160%</strong><span>Brand Uplift</span><small>Campaign result</small></div></header>
   <p class="case-status">Case study draft · Metrics carried over from the portfolio; verify before publishing.</p>
-  <div class="case-grid">
-    <article><span class="case-number">01 / CONTEXT</span><h3>Background &amp; objective</h3><p class="case-placeholder">To add: business challenge, target audience and campaign objective.</p></article>
-    <article><span class="case-number">02 / OWNERSHIP</span><h3>My role &amp; scope</h3><p class="case-placeholder">To add: responsibilities, collaborators and project timeline.</p></article>
-    <article><span class="case-number">03 / APPROACH</span><h3>Strategy &amp; execution</h3><p class="case-placeholder">To add: channel strategy, creative approach and key optimization decisions.</p></article>
-    <article><span class="case-number">04 / IMPACT</span><h3>Results &amp; learnings</h3><p class="case-placeholder">To add: verified KPIs, comparison period and the learning behind the result.</p></article>
-  </div>
-  <details class="case-evidence"><summary>Campaign visuals &amp; supporting evidence</summary><p class="case-placeholder">To add: campaign images, reporting screenshots and supporting data.</p></details>
+<div class="case-grid">
+<article><span class="case-number">01 / CONTEXT</span><h3>Background &amp; objective</h3><p class="project-copy">To add: Describe the business background, target audience, key challenge and campaign objectives.</p></article>
+<article><span class="case-number">02 / OWNERSHIP</span><h3>My role &amp; scope</h3><dl class="project-roles">
+        <div><dt>Campaign Planning</dt><dd>Add your responsibilities in defining objectives, channel selection and budget allocation.</dd></div>
+        <div><dt>Campaign Execution</dt><dd>Add the campaigns and channels you managed, including launch and optimization responsibilities.</dd></div>
+        <div><dt>Budget & KPI Monitoring</dt><dd>Add how you monitored spending, KPI delivery and budget adjustments.</dd></div>
+        <div><dt>Analysis & Reporting</dt><dd>Add the reports, insights and recommendations you delivered.</dd></div>
+        <div><dt>Tracking & Measurement</dt><dd>Add your scope in tracking validation, data reconciliation and measurement.</dd></div>
+        <div><dt>Creative & Conversion Optimization</dt><dd>Add your involvement in creative testing and conversion improvements.</dd></div>
+</dl></article>
+<article><span class="case-number">03 / APPROACH</span><h3>Strategy &amp; execution</h3><dl class="project-points">
+        <div><dt>Channel & Budget Strategy</dt><dd>Add the channel mix, budget allocation and rationale behind your approach.</dd></div>
+        <div><dt>Audience & Traffic Strategy</dt><dd>Add audience selection, targeting and traffic acquisition decisions.</dd></div>
+        <div><dt>Campaign Optimization</dt><dd>Add key tests and optimization decisions made during the campaign.</dd></div>
+        <div><dt>Creative & Conversion Strategy</dt><dd>Add creative, landing page or store improvements relevant to this project.</dd></div>
+</dl></article>
+<article><span class="case-number">04 / IMPACT</span><h3>Results &amp; learnings</h3><dl class="project-points">
+        <div><dt>Performance Results</dt><dd>Add confirmed results, KPI achievement and the reporting period.</dd></div>
+        <div><dt>Efficiency & Scale</dt><dd>Add changes in cost, return or campaign scale, including the comparison baseline.</dd></div>
+        <div><dt>Key Learnings</dt><dd>Add the main insight from the campaign and what drove the outcome.</dd></div>
+        <div><dt>Next Steps</dt><dd>Add recommendations or actions informed by the results.</dd></div>
+</dl></article>
+</div>
+<section class="achievement-section" aria-labelledby="achievement-title"><span class="case-number">05 / ACHIEVEMENTS</span><h3 id="achievement-title">Campaign achievements</h3><p class="achievement-intro">Campaign visuals and performance highlights. Select an image to view it in full.</p><div class="achievement-grid">
+<figure class="achievement-item"><div class="achievement-frame"><a href="homecredit-achievement-01.jpg" target="_blank" rel="noopener noreferrer" aria-label="View Home Credit achievement 1 in full" hidden><img src="homecredit-achievement-01.jpg" alt="Home Credit campaign achievement 1" loading="eager" /></a><div class="achievement-placeholder"><b aria-hidden="true">01</b><span>Achievement image coming soon</span></div></div><figcaption>Campaign highlight 01</figcaption></figure>
+<figure class="achievement-item"><div class="achievement-frame"><a href="homecredit-achievement-02.jpg" target="_blank" rel="noopener noreferrer" aria-label="View Home Credit achievement 2 in full" hidden><img src="homecredit-achievement-02.jpg" alt="Home Credit campaign achievement 2" loading="eager" /></a><div class="achievement-placeholder"><b aria-hidden="true">02</b><span>Achievement image coming soon</span></div></div><figcaption>Campaign highlight 02</figcaption></figure>
+</div></section>
 </section>
 </main>
 <footer class="site-footer section-wrap"><a href="index.html#work">← All projects</a><span>© <span id="year">2026</span> Dustin Nguyen</span><a href="index.html#contact">Let’s connect ↗</a></footer>
   <script>
+    document.querySelectorAll('.achievement-frame').forEach(frame => {
+      const img = frame.querySelector('img');
+      const link = frame.querySelector('a');
+      const placeholder = frame.querySelector('.achievement-placeholder');
+      const showImage = () => { if (img.naturalWidth) { link.hidden = false; placeholder.hidden = true; } };
+      img.addEventListener('load', showImage);
+      img.addEventListener('error', () => { link.hidden = true; placeholder.hidden = false; });
+      if (img.complete) showImage();
+    });
+
     const toggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.main-nav');
     toggle?.addEventListener('click', () => {
