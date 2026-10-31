@@ -10,16 +10,32 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <style>
-    .project-avene .avene-context, .project-avene .avene-ownership { grid-column: 1 / -1; }
-    .project-avene .avene-copy { max-width: 850px; color: #525252; font-size: .9rem; line-height: 1.85; margin: 12px 0 0; }
-    .avene-roles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 36px; margin: 20px 0 0; }
-    .avene-roles > div { min-width: 0; }
-    .avene-roles dt { font-size: .88rem; font-weight: 800; line-height: 1.5; color: #111; }
-    .avene-roles dd { margin: 7px 0 0; font-size: .87rem; line-height: 1.85; color: #525252; }
-    .avene-points { margin: 20px 0 0; display: grid; gap: 22px; }
-    .avene-points dt { color: #111; font-size: .9rem; font-weight: 800; line-height: 1.5; }
-    .avene-points dd { color: #525252; font-size: .87rem; line-height: 1.85; margin: 7px 0 0; }
-    @media (max-width: 640px) { .avene-roles { grid-template-columns: 1fr; gap: 20px; } }
+    .project-avene .case-grid { grid-template-columns: minmax(0, 1fr); gap: 42px; }
+    .project-avene .case-grid > article { grid-column: 1 / -1; padding-top: 30px; }
+    .project-avene .case-grid h3, .project-avene .achievement-section h3 { margin: 12px 0 24px; font-size: clamp(1.4rem, 2.5vw, 1.9rem); font-weight: 800; line-height: 1.25; letter-spacing: -.04em; color: #b6470b; }
+    .project-avene .case-number { font-family: var(--font); font-size: .73rem; font-weight: 700; letter-spacing: .08em; color: #686868; }
+    .project-avene .avene-copy { max-width: none; color: #525252; font-size: .95rem; line-height: 1.9; margin: 12px 0 0; text-align: justify; hyphens: auto; }
+    .avene-roles, .avene-points { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px 40px; margin: 0; }
+    .avene-roles > div, .avene-points > div { min-width: 0; padding: 20px 22px; background: #faf8f6; border-left: 2px solid #f36f2140; border-radius: 0 8px 8px 0; }
+    .avene-roles dt, .avene-points dt { color: #111; font-size: .94rem; font-weight: 800; line-height: 1.5; }
+    .avene-roles dd, .avene-points dd { color: #525252; font-size: .9rem; line-height: 1.85; margin: 9px 0 0; }
+    .achievement-section { border-top: 1px solid #dedede; padding-top: 30px; margin-top: 42px; }
+    .achievement-intro { font-size: .88rem; line-height: 1.8; color: #606060; margin: -10px 0 24px; }
+    .achievement-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; }
+    .achievement-item { min-width: 0; margin: 0; }
+    .achievement-frame { position: relative; aspect-ratio: 4 / 3; display: grid; place-items: center; background: #faf8f6; border: 1px solid #e7dfd9; border-radius: 10px; overflow: hidden; }
+    .achievement-frame a { display: block; width: 100%; height: 100%; }
+    .achievement-frame img { display: block; width: 100%; height: 100%; object-fit: contain; }
+    .achievement-placeholder { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: #74706c; font-size: .8rem; text-align: center; padding: 20px; }
+    .achievement-placeholder b { font-size: 1.5rem; font-weight: 500; color: #b6470b; }
+    .achievement-item figcaption { margin-top: 12px; font-size: .83rem; font-weight: 700; color: #333; }
+    .project-avene [hidden] { display: none !important; }
+    @media (max-width: 640px) {
+      .avene-roles, .avene-points, .achievement-grid { grid-template-columns: minmax(0,1fr); gap: 18px; }
+      .project-avene .case-grid { gap: 30px; }
+      .project-avene .avene-copy { text-align: left; }
+      .avene-roles > div, .avene-points > div { padding: 18px; }
+    }
   </style>
 </head>
 <body class="case-page">
@@ -75,16 +91,43 @@
         <div><dt>No. 1 on Lazada</dt><dd>Ranked as the best-selling brand in Lazada’s Cosmetics category during the 3.3, 6.6, 9.9 and 12.12 mega sale campaigns.</dd></div>
         <div><dt>No. 2 on Shopee</dt><dd>Ranked as the second-best-selling brand in Shopee’s Sunscreen category during the 6.6 and 9.9 mega sale campaigns.</dd></div>
         <div><dt>ROAS above 6.3x</dt><dd>Maintained ROAS above 6.3x with average monthly marketing spend of VND 250 million.</dd></div>
-        <div><dt>25% lower cost per traffic</dt><dd>Reduced cost per store visit by 25% from March to September 2024.</dd></div>
-        <div><dt>Growth 160% total revenue</dt><dd>The total revenue are recorded on all ads channels over VND 15 billions in 2024 vs. 2023</dd></div>
+        <div><dt>25% lower cost per visit</dt><dd>Reduced cost per store visit by 25% from March to September 2024.</dd></div>
+        <div><dt>160% revenue growth</dt><dd>Recorded total revenue of over VND 15 billion across advertising channels in 2024, with 160% growth versus 2023.</dd></div>
       </dl>
     </article>
   </div>
-  <details class="case-evidence"><summary>Campaign visuals &amp; supporting evidence</summary><p class="case-placeholder">To add: campaign images, reporting screenshots and supporting data.</p></details>
+  <section class="achievement-section" aria-labelledby="achievement-title">
+    <span class="case-number">05 / ACHIEVEMENTS</span><h3 id="achievement-title">Campaign achievements</h3>
+    <p class="achievement-intro">Campaign rankings and performance highlights. Select an image to view it in full.</p>
+    <!-- Upload these JPG files alongside avene.html; change src and href together if using another filename or format. -->
+    <div class="achievement-grid">
+      <figure class="achievement-item">
+        <div class="achievement-frame"><a href="avene-achievement-01.jpg" target="_blank" rel="noopener noreferrer" aria-label="View lazada campaign ranking in full" hidden><img src="avene-achievement-01.jpg" alt="Lazada campaign ranking for Avène" loading="eager" /></a><div class="achievement-placeholder"><b aria-hidden="true">01</b><span>Achievement image coming soon</span></div></div>
+        <figcaption>Lazada campaign ranking</figcaption>
+      </figure>
+      <figure class="achievement-item">
+        <div class="achievement-frame"><a href="avene-achievement-02.jpg" target="_blank" rel="noopener noreferrer" aria-label="View shopee campaign ranking in full" hidden><img src="avene-achievement-02.jpg" alt="Shopee campaign ranking for Avène" loading="eager" /></a><div class="achievement-placeholder"><b aria-hidden="true">02</b><span>Achievement image coming soon</span></div></div>
+        <figcaption>Shopee campaign ranking</figcaption>
+      </figure>
+      <figure class="achievement-item">
+        <div class="achievement-frame"><a href="avene-achievement-03.jpg" target="_blank" rel="noopener noreferrer" aria-label="View performance results in full" hidden><img src="avene-achievement-03.jpg" alt="Performance results for Avène" loading="eager" /></a><div class="achievement-placeholder"><b aria-hidden="true">03</b><span>Achievement image coming soon</span></div></div>
+        <figcaption>Performance results</figcaption>
+      </figure>
+    </div>
+  </section>
 </section>
 </main>
 <footer class="site-footer section-wrap"><a href="index.html#work">← All projects</a><span>© <span id="year">2026</span> Dustin Nguyen</span><a href="index.html#contact">Let’s connect ↗</a></footer>
   <script>
+    document.querySelectorAll('.achievement-frame').forEach(frame => {
+      const img = frame.querySelector('img');
+      const link = frame.querySelector('a');
+      const placeholder = frame.querySelector('.achievement-placeholder');
+      const showImage = () => { if (img.naturalWidth) { link.hidden = false; placeholder.hidden = true; } };
+      img.addEventListener('load', showImage);
+      img.addEventListener('error', () => { link.hidden = true; placeholder.hidden = false; });
+      if (img.complete) showImage();
+    });
     const toggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.main-nav');
     toggle?.addEventListener('click', () => {
