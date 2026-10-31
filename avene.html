@@ -9,6 +9,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .project-avene .avene-context, .project-avene .avene-ownership { grid-column: 1 / -1; }
+    .project-avene .avene-copy { max-width: 850px; color: #525252; font-size: .9rem; line-height: 1.85; margin: 12px 0 0; }
+    .avene-roles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 36px; margin: 20px 0 0; }
+    .avene-roles > div { min-width: 0; }
+    .avene-roles dt { font-size: .88rem; font-weight: 800; line-height: 1.5; color: #111; }
+    .avene-roles dd { margin: 7px 0 0; font-size: .87rem; line-height: 1.85; color: #525252; }
+    @media (max-width: 640px) { .avene-roles { grid-template-columns: 1fr; gap: 20px; } }
+  </style>
 </head>
 <body class="case-page">
   <header class="site-header">
@@ -37,8 +46,20 @@
   <div class="case-result"><strong>+140%</strong><span>Revenue Growth</span><small>2024 vs. 2023</small></div></header>
   <p class="case-status">Case study draft · Metrics carried over from the portfolio; verify before publishing.</p>
   <div class="case-grid">
-    <article><span class="case-number">01 / CONTEXT</span><h3>Background &amp; objective</h3><p class="case-placeholder">To add: business challenge, target audience and campaign objective.</p></article>
-    <article><span class="case-number">02 / OWNERSHIP</span><h3>My role &amp; scope</h3><p class="case-placeholder">To add: responsibilities, collaborators and project timeline.</p></article>
+    <article class="avene-context"><span class="case-number">01 / CONTEXT</span><h3>Background &amp; objective</h3>
+      <p class="avene-copy">Avène is a French dermocosmetics brand known for high-quality skincare recommended by healthcare professionals and distributed in Vietnam by DKSH.</p>
+      <p class="avene-copy">Working with DKSH, I managed paid media to drive sales for Avène’s stores on Shopee and Lazada, supported by Facebook and TikTok campaigns to bring traffic to the stores.</p>
+    </article>
+    <article class="avene-ownership"><span class="case-number">02 / OWNERSHIP</span><h3>My role &amp; scope</h3>
+      <dl class="avene-roles">
+        <div><dt>Campaign Planning</dt><dd>Partnered with Avène’s point of contact to define marketing and sales objectives and develop the media strategy, including channel selection and budget allocation.</dd></div>
+        <div><dt>Campaign Execution</dt><dd>Launched, monitored, and optimized keyword search campaigns on Shopee and Lazada, alongside Facebook and TikTok campaigns to drive store traffic.</dd></div>
+        <div><dt>Budget &amp; KPI Monitoring</dt><dd>Tracked spend and KPI delivery, recommending budget adjustments based on performance and business priorities.</dd></div>
+        <div><dt>Analysis &amp; Reporting</dt><dd>Analyzed performance across channels and conversion stages, delivering reports with actionable insights and optimization recommendations.</dd></div>
+        <div><dt>Tracking &amp; Measurement</dt><dd>Coordinated with Avène’s internal team to validate tracking, reconcile data, and resolve measurement discrepancies.</dd></div>
+        <div><dt>Creative &amp; Conversion Optimization</dt><dd>Developed creative briefs, tested audiences, and recommended improvements to store content and voucher offers to support conversion.</dd></div>
+      </dl>
+    </article>
     <article><span class="case-number">03 / APPROACH</span><h3>Strategy &amp; execution</h3><p class="case-placeholder">To add: channel strategy, creative approach and key optimization decisions.</p></article>
     <article><span class="case-number">04 / IMPACT</span><h3>Results &amp; learnings</h3><p class="case-placeholder">To add: verified KPIs, comparison period and the learning behind the result.</p></article>
   </div>
