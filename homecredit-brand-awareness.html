@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Home Credit project case study — Dustin Nguyen’s performance marketing portfolio." />
+  <title>Home Credit — Brand Awareness | Dustin Nguyen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .project-homecredit .case-grid { grid-template-columns: minmax(0, 1fr); gap: 42px; }
+    .project-homecredit .case-grid > article { grid-column: 1 / -1; padding-top: 30px; }
+    .project-homecredit .case-grid h3, .project-homecredit .achievement-section h3 { margin: 12px 0 24px; font-size: clamp(1.4rem, 2.5vw, 1.9rem); font-weight: 800; line-height: 1.25; letter-spacing: -.04em; color: #b51420; }
+    .project-homecredit .case-number { font-family: var(--font); font-size: .73rem; font-weight: 700; letter-spacing: .08em; color: #686868; }
+    .project-homecredit .project-copy { max-width: none; color: #525252; font-size: .95rem; line-height: 1.9; margin: 12px 0 0; text-align: justify; hyphens: auto; }
+    .project-roles, .project-points { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px 40px; margin: 0; }
+    .project-roles > div, .project-points > div { min-width: 0; padding: 20px 22px; background: #fafafa; border-left: 2px solid #e31e2440; border-radius: 0 8px 8px 0; }
+    .project-roles dt, .project-points dt { color: #111; font-size: .94rem; font-weight: 800; line-height: 1.5; }
+    .project-roles dd, .project-points dd { color: #525252; font-size: .9rem; line-height: 1.85; margin: 9px 0 0; }
+    .achievement-section { border-top: 1px solid #dedede; padding-top: 30px; margin-top: 42px; }
+    .achievement-intro { font-size: .88rem; line-height: 1.8; color: #606060; margin: -10px 0 24px; }
+    .achievement-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; }
+    .achievement-item { min-width: 0; margin: 0; }
+    .achievement-frame { position: relative; aspect-ratio: 1677 / 938; display: grid; place-items: center; background: #fafafa; border: 1px solid #e7dfd9; border-radius: 10px; overflow: hidden; }
+    .achievement-frame [hidden] { display: none !important; }
+    .achievement-frame a { display: block; width: 100%; height: 100%; }
+    .achievement-frame img { display: block; width: 100%; height: 100%; object-fit: contain; }
+    .achievement-placeholder { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: #74706c; font-size: .8rem; text-align: center; padding: 20px; }
+    .achievement-placeholder b { font-size: 1.5rem; font-weight: 500; color: #b51420; }
+    .achievement-item figcaption { margin-top: 12px; font-size: .83rem; font-weight: 700; color: #333; }
+    .project-homecredit [hidden] { display: none !important; }
+    @media (max-width: 640px) {
+      .project-roles, .project-points, .achievement-grid { grid-template-columns: minmax(0,1fr); gap: 18px; }
+      .project-homecredit .case-grid { gap: 30px; }
+      .project-homecredit .project-copy { text-align: left; }
+      .project-roles > div, .project-points > div { padding: 18px; }
+    }
+
+.project-homecredit .achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  width: 100%;
+  max-width: none;
+}
+
+.project-homecredit .achievement-item {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  margin: 0;
+}
+
+.project-homecredit .achievement-frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.project-homecredit .achievement-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 640px) {
+  .project-homecredit .achievement-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.achievement-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 28px;
+  width: 100%;
+  max-width: none;
+}
+
+.achievement-grid > .achievement-item {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+}
+
+.achievement-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Điện thoại: một cột */
+@media (max-width: 640px) {
+  .achievement-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+  .project-homecredit .case-header h2, .project-homecredit .case-result strong { color: #b51420; }
+</style>
+</head>
+<body class="case-page">
+  <header class="site-header">
+    <a class="brand" href="index.html#home" aria-label="Dustin Nguyen home">
+      <span class="brand-name">Dustin Nguyen</span>
+      <span class="brand-role">// Performance Marketing Specialist</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="nav-link" href="index.html#home">Home</a>
+      <a class="nav-link" href="index.html#expertise">Expertise</a>
+      <a class="nav-link" href="index.html#work">Portfolio</a>
+      <a class="nav-link" href="index.html#about">About</a>
+    </nav>
+
+    <a class="header-cta" href="index.html#contact">Let’s Connect <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+<main class="section-wrap case-page-main">
+<section class="case-study project-homecredit" id="case-homecredit" aria-labelledby="title-homecredit">
+  <a class="case-back" href="index.html#work">← Back to Selected Work</a>
+  <header class="case-header"><div><p class="case-kicker">PROJECT / BRAND AWARENESS</p><h2 id="title-homecredit">Home Credit</h2><p class="case-channels">FACEBOOK · TIKTOK · SHOPEE · LAZADA · TIKI<br>2024 -> JAN 2025</p></div>
+  <div class="case-result"><strong>22.1x</strong><span>ROAS</span><small>Sustained over 10 months</small></div></header>
+<div class="case-grid">
+<article class="avene-context"><span class="case-number">01 / CONTEXT</span><h3>Background &amp; Objectives</h3>
+      <p class="avene-copy">Logitech is a Swiss-founded global technology brand known for high-quality computer peripherals and accessories, including mice, keyboards, webcams and gaming gear, trusted by everyday users and professionals worldwide.</p>
+      <p class="avene-copy">I took full ownership of digital marketing operations across all e-commerce platforms, with the goal of increasing the share of revenue from online channels and building Logitech’s brand awareness on social media.</p>
+    </article>
+<article><span class="case-number">02 / OWNERSHIP</span><h3>My Roles &amp; Scopes</h3><dl class="project-roles">
+        <div><dt>Campaign Planning</dt><dd>Work directly with a manager of Logitech to define marketing and sales objectives and develop the media strategy, including channel selection and budget allocation.</dd></div>
+        <div><dt>Campaign Execution</dt><dd>Launched, monitored, and optimized keyword search campaigns on Shopee and Lazada with supporting of external traffic through Facebook, operate the TikTok Shop Livestream through build the livestream script, boost product ads.</dd></div>
+        <div><dt>Budget & KPI Monitoring</dt><dd>Tracked spend and KPI delivery, recommending budget adjustments based on performance and business priorities to achieve both business &amp; marketing goal.</dd></div>
+        <div><dt>Analysis & Reporting</dt><dd>Analyzed performance across channels and conversion stages, delivering reports with actionable insights and optimization recommendations.</dd></div>
+        <div><dt>Tracking & Measurement</dt><dd>Coordinated with Logitech's internal team to validate tracking, reconcile data, and resolve measurement discrepancies through Shopee Brand Portal, Lazada Seller Center, Meta and TikTok.</dd></div>
+        <div><dt>Creative & Conversion Optimization</dt><dd>Developed creative briefs, tested audiences, and recommended improvements to store content and voucher offers to support conversion.</dd></div>
+</dl></article>
+<article><span class="case-number">03 / APPROACH</span><h3>Strategy &amp; Execution</h3><dl class="project-points">
+        <div><dt>Channel & Budget Strategy</dt><dd>Nearest 70% of total budget for the E-commerce channels to increasing the revenue and maintain the ROAS get client's expectation (ROAS minimum: 19.5), alongside 20% of budget for driving more traffic and increasing user's engagements, which help expand the middle funnel to support lower funnel. And remain budget for awareness to help user know about brand and voucher deal.</dd></div>
+        <div><dt>Audience & Traffic Strategy</dt><dd>Apply &amp; customize ads for many audience's types, generally from mass to retargeting to look-a-like audience. Including the retargeting audience, i had deeply segment by user's behavior such as product view, add-to-cart, check-out, purchase to optimize the efficiency.</dd></div>
+        <div><dt>Campaign Optimization</dt><dd>For E-commerce campaigns, i priorities approach to customer through brand keyword to maximize visibility on touchpoint of customer journey, beside optimize impression share of product keyword related to Logitech products. In the livestream campaigns, i had test a lot of goals combine to gain more livestream watch and view product, which help improve the purchase rate.</dd></div>
+        <div><dt>Creative & Conversion Strategy</dt><dd>Provide key insights &amp; get aligned with the Logitech manager to developed a range of voucher offers to enhance customer value and simplify the purchase experience<br>Examples: Voucher discount 30% (maximize: VND 150K) for ordered had value > 1M.</dd></div>
+</dl></article>
+<article><span class="case-number">04 / IMPACT</span><h3>Results &amp; Learnings</h3><dl class="project-points">
+        <div><dt>No. 1 on Shopee</dt><dd>Ranked as the best-selling brand in Lazada's Computer Accessories Category during the 11.11 mega sale campaigns.</dd></div>
+        <div><dt>No. 1 on Lazada</dt><dd>Ranked as the best-selling brand in Lazada's Computer Accessories Category during the 6.6, 11.11, 12.12 mega sale campaigns.</dd></div>
+        <div><dt>ROAS above 16.2</dt><dd>Maintained the ROAS on all channels with average monnthly marketing investment of VND 400 millions.</dd></div>
+        <div><dt>x2 online revenue contribution</dt><dd>With all effort, in 2024 the total revenue on online channels uplift 2 times versus 2023. (from 10% to 20%).</dd></div>
+</dl></article>
+</div>
+<section class="achievement-section" aria-labelledby="achievement-title"><span class="case-number">05 / ACHIEVEMENTS</span><h3 id="achievement-title">Campaign achievements</h3><p class="achievement-intro">Campaign visuals and performance highlights. Select an image to view it in full.</p>
+      <div class="achievement-grid">
+<figure class="achievement-item">
+        <div class="achievement-frame">
+          <a href="logitech-shopee-en.png"
+             target="_blank"
+             rel="noopener noreferrer">
+            <img src="logitech-shopee-en.png"
+                 alt="logitech — Shopee Top 1, Computer Accessories, 11.11 Mega Sale"
+                 loading="eager">
+          </a>
+        </div>
+      <figcaption>Shopee · Top 1 · 11.11 Mega Sale</figcaption>
+      </figure>
+
+      <figure class="achievement-item">
+        <div class="achievement-frame">
+          <a href="Logitech-lazada-en1.png"
+             target="_blank"
+             rel="noopener noreferrer">
+            <img src="Logitech-lazada-en1.png"
+                 alt="Logitech — Lazada Top 1, Computer Accessories, 6.6 Mega Sale"
+                 loading="eager">
+          </a>
+        </div>
+        <figcaption>Lazada · Top 1 · 6.6 Mega Sale</figcaption>
+      </figure>
+      
+      <figure class="achievement-item">
+        <div class="achievement-frame">
+          <a href="Logitech-lazada-en2.png"
+             target="_blank"
+             rel="noopener noreferrer">
+            <img src="Logitech-lazada-en2.png"
+                 alt="Logitech — Lazada Top 1, Computer Accessories, 12.12 Mega Sale"
+                 loading="eager">
+          </a>
+        </div>
+        <figcaption>Lazada · Top 1 · 12.12 Mega Sale</figcaption>
+      </figure>
+      
+      <figure class="achievement-item">
+        <div class="achievement-frame">
+          <a href="Logitech-tiktok-en.png"
+             target="_blank"
+             rel="noopener noreferrer">
+            <img src="Logitech-tiktok-en.png"
+                 alt="Logitech — TikTok ROAS >100X, Computer Accessories, 9.9 Mega Sale"
+                 loading="eager">
+          </a>
+        </div>
+        <figcaption>TikTok · New TikTok Ads Livestream Record · 9.9 Mega Sale</figcaption>  
+     </figure>
+    </div>
+  </section>
+</section>
+</main>
+<footer class="site-footer section-wrap"><a href="index.html#work">← All projects</a><span>© <span id="year">2026</span> Dustin Nguyen</span><a href="index.html#contact">Let’s connect ↗</a></footer>
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle?.addEventListener('click', () => {
+      const open = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+    nav?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      nav.classList.remove('is-open');
+      toggle?.setAttribute('aria-expanded', 'false');
+    }));
+    document.querySelector('#year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
