@@ -94,45 +94,61 @@
   <div class="achievement-grid">
       <figure class="achievement-item">
         <div class="achievement-frame">
-          <a href="Logitech-lazada-en.png"
+          <a href="Logitech-shopee-en.png"
              target="_blank"
              rel="noopener noreferrer">
-            <img src="avene-lazada-en.png"
-                 alt="Avène — Lazada Top 1, Health & Beauty, 6.6 Mega Sale"
+            <img src="Logitech-shopee-en.png"
+                 alt="Logitech — Shopee Top 1, Computer Accessories, 11.11 Mega Sale"
                  loading="eager">
           </a>
         </div>
-      <figcaption>Lazada · Top 1 · 6.6 Mega Sale</figcaption>
+      <figcaption>Shopee · Top 1 · 11.11 Mega Sale</figcaption>
       </figure>
 
       <figure class="achievement-item">
         <div class="achievement-frame">
-          <a href="avene-shopee-en.png"
+          <a href="Logitech-lazada-en1.png"
              target="_blank"
              rel="noopener noreferrer">
-            <img src="avene-shopee-en.png"
-                 alt="Avène — Shopee Top 2, Health & Beauty, 6.6 Mega Sale"
+            <img src="Logitech-lazada-en1.png"
+                 alt="Logitech — Lazada Top 1, Computer Accessories, 6.6 Mega Sale"
                  loading="eager">
           </a>
         </div>
-        <figcaption>Shopee · Top 2 · 6.6 Mega Sale</figcaption>
-    </figure>
+        <figcaption>Lazada · Top 1 · 6.6 Mega Sale</figcaption>
+      </figure>
+      
+      <figure class="achievement-item">
+        <div class="achievement-frame">
+          <a href="Logitech-lazada-en2.png"
+             target="_blank"
+             rel="noopener noreferrer">
+            <img src="Logitech-lazada-en2.png"
+                 alt="Logitech — Lazada Top 1, Computer Accessories, 12.12 Mega Sale"
+                 loading="eager">
+          </a>
+        </div>
+        <figcaption>Lazada · Top 1 · 12.12 Mega Sale</figcaption>
+      </figure>
+      
+      <figure class="achievement-item">
+        <div class="achievement-frame">
+          <a href="Logitech-tiktok-en.png"
+             target="_blank"
+             rel="noopener noreferrer">
+            <img src="Logitech-tiktok-en.png"
+                 alt="Logitech — TikTok ROAS >100X, Computer Accessories, 9.9 Mega Sale"
+                 loading="eager">
+          </a>
+        </div>
+        <figcaption>TikTok · New TikTok Ads Livestream Record · 9.9 Mega Sale</figcaption>  
+     </figure>
     </div>
   </section>
 </section>
 </main>
 <footer class="site-footer section-wrap"><a href="index.html#work">← All projects</a><span>© <span id="year">2026</span> Dustin Nguyen</span><a href="index.html#contact">Let’s connect ↗</a></footer>
   <script>
-    document.querySelectorAll('.achievement-frame').forEach(frame => {
-      const img = frame.querySelector('img');
-      const link = frame.querySelector('a');
-      const placeholder = frame.querySelector('.achievement-placeholder');
-      const showImage = () => { if (img.naturalWidth) { link.hidden = false; placeholder.hidden = true; } };
-      img.addEventListener('load', showImage);
-      img.addEventListener('error', () => { link.hidden = true; placeholder.hidden = false; });
-      if (img.complete) showImage();
-    });
-
     const toggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.main-nav');
     toggle?.addEventListener('click', () => {
