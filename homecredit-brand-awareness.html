@@ -3,7 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Home Credit project case study — Dustin Nguyen’s performance marketing portfolio." />
+  <meta name="description" content="Home Credit brand awareness case study: +125% total user reach and 1M+ followers across Facebook and TikTok, 2025 vs. 2024." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Dustin Nguyen — Performance Marketing Portfolio" />
+  <meta property="og:title" content="Home Credit — Brand Awareness | Dustin Nguyen" />
+  <meta property="og:description" content="Home Credit brand awareness case study: +125% total user reach and 1M+ followers across Facebook and TikTok, 2025 vs. 2024." />
+  <meta property="og:url" content="https://dustinnguyen3301.github.io/Performance-Marketing-Portfolio/homecredit-brand-awareness.html" />
+  <meta property="og:image" content="https://dustinnguyen3301.github.io/Performance-Marketing-Portfolio/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Dustin Nguyen, Performance Marketing Specialist" />
+  <meta name="twitter:card" content="summary_large_image" />
   <title>Home Credit — Brand Awareness | Dustin Nguyen</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,11 +33,12 @@
     .project-roles dd, .project-points dd { color: #525252; font-size: .9rem; line-height: 1.85; margin: 9px 0 0; }
     .achievement-section { border-top: 1px solid #dedede; padding-top: 30px; margin-top: 42px; }
     .achievement-intro { font-size: .88rem; line-height: 1.8; color: #606060; margin: -10px 0 24px; }
-    .achievement-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; }
+    .achievement-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; align-items: start; width: 100%; }
     .achievement-item { min-width: 0; margin: 0; }
-    .achievement-frame { position: relative; aspect-ratio: 1677 / 938; display: grid; place-items: center; background: #fafafa; border: 1px solid #e7dfd9; border-radius: 10px; overflow: hidden; }
+    /* Fixed 4:3 frame; object-fit: contain shows the WHOLE image (never crops), any leftover space is a neutral border. */
+    .achievement-frame { position: relative; aspect-ratio: 4 / 3; background: #fafafa; border: 1px solid #e7dfd9; border-radius: 10px; overflow: hidden; }
     .achievement-frame [hidden] { display: none !important; }
-    .achievement-frame a { display: block; width: 100%; height: 100%; }
+    .achievement-frame a { position: absolute; inset: 0; display: block; }
     .achievement-frame img { display: block; width: 100%; height: 100%; object-fit: contain; }
     .achievement-placeholder { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: #74706c; font-size: .8rem; text-align: center; padding: 20px; }
     .achievement-placeholder b { font-size: 1.5rem; font-weight: 500; color: #b51420; }
@@ -38,64 +51,6 @@
       .project-roles > div, .project-points > div { padding: 18px; }
     }
 
-.project-homecredit .achievement-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 28px;
-  width: 100%;
-  max-width: none;
-}
-
-.project-homecredit .achievement-item {
-  width: 100%;
-  max-width: none;
-  min-width: 0;
-  margin: 0;
-}
-
-.project-homecredit .achievement-frame {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-}
-
-.project-homecredit .achievement-frame img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-@media (max-width: 640px) {
-  .project-homecredit .achievement-grid {
-    grid-template-columns: 1fr;
-  }
-}
-.achievement-grid {
-  display: grid !important;
-  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-  gap: 28px;
-  width: 100%;
-  max-width: none;
-}
-
-.achievement-grid > .achievement-item {
-  width: 100%;
-  min-width: 0;
-  margin: 0;
-}
-
-.achievement-frame img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-/* Điện thoại: một cột */
-@media (max-width: 640px) {
-  .achievement-grid {
-    grid-template-columns: 1fr !important;
-  }
-}
   .project-homecredit .case-header h2, .project-homecredit .case-result strong { color: #b51420; }
 </style>
 </head>
@@ -122,7 +77,7 @@
 <main class="section-wrap case-page-main">
 <section class="case-study project-homecredit" id="case-homecredit" aria-labelledby="title-homecredit">
   <a class="case-back" href="index.html#work">← Back to Selected Work</a>
-  <header class="case-header"><div><p class="case-kicker">PROJECT / BRAND AWARENESS</p><h2 id="title-homecredit">Home Credit</h2><p class="case-channels">FACEBOOK · YOUTUBE · TIKTOK · ZALO · THREADS<br>FEB 2025 -> 2026</p></div>
+  <header class="case-header"><div><p class="case-kicker">PROJECT / BRAND AWARENESS</p><h2 id="title-homecredit">Home Credit</h2><p class="case-channels">FACEBOOK · YOUTUBE · TIKTOK · ZALO · THREADS<br>FEB 2025 → 2026</p></div>
   <div class="case-result"><strong>+160%</strong><span>Brand Awareness Uplift</span><small>2025 vs. 2024</small></div></header>
 <div class="case-grid">
 <article class="avene-context"><span class="case-number">01 / CONTEXT</span><h3>Background &amp; Objectives</h3>
@@ -148,42 +103,30 @@
         <div><dt>Improved over 20% the View Rate on both TikTok and Youtube</dt><dd>With a lot of analysis and get insight, i work closely to improve the creative's quality (format, hook, voice, v.v) that help improved the deeper view rate on TikTok and Youtube had uplift by 20% (vs 2024).</dd></div>
 </dl></article>
 </div>
-<section class="achievement-section" aria-labelledby="achievement-title"><span class="case-number">05 / ACHIEVEMENTS</span><h3 id="achievement-title">Campaign achievements</h3><p
+<section class="achievement-section" aria-labelledby="achievement-title"><span class="case-number">05 / ACHIEVEMENTS</span><h3 id="achievement-title">Campaign achievements</h3><p class="achievement-intro">Campaign visuals and recognitions. Select an image to view it in full.</p>
       <div class="achievement-grid">
-<figure class="achievement-item">
+      <figure class="achievement-item">
         <div class="achievement-frame">
-          <a href="homecredit-awareness-2025milestone.png"
-             target="_blank"
-             rel="noopener noreferrer">
-            <img src="homecredit-awareness-2025milestone.png"
-                 alt="logitech — Shopee Top 1, Computer Accessories, 11.11 Mega Sale"
-                 loading="eager">
+          <a href="homecredit-awareness-2025milestone.png" target="_blank" rel="noopener noreferrer">
+            <img src="homecredit-awareness-2025milestone.png" width="1672" height="941" alt="Home Credit 2025 marketing milestones: 25M+ users reached across all channels and 1M+ followers across TikTok and Facebook" loading="lazy">
           </a>
         </div>
-      <figcaption>Awareness · Home Credit Vietnam 2025 Milestone</figcaption>
+        <figcaption>Awareness · Home Credit Vietnam 2025 Milestone</figcaption>
       </figure>
 
       <figure class="achievement-item">
         <div class="achievement-frame">
-          <a href="homecredit-awareness-homegreen.jpg"
-             target="_blank"
-             rel="noopener noreferrer">
-            <img src="homecredit-awareness-homegreen.jpg"
-                 alt="Logitech — Lazada Top 1, Computer Accessories, 6.6 Mega Sale"
-                 loading="eager">
+          <a href="homecredit-awareness-homegreen.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="homecredit-awareness-homegreen.jpg" width="2000" height="2000" alt="Home Green activity: Home Credit volunteers handing over a bag of clothes, with 1.1 tonnes of clothing collected and processed to support communities hit by the storm" loading="lazy">
           </a>
         </div>
         <figcaption>Awareness · Home Credit Vietnam 2025 Activity · Home Green</figcaption>
       </figure>
-      
+
       <figure class="achievement-item">
         <div class="achievement-frame">
-          <a href="homecredit-awareness-homelove.jpg"
-             target="_blank"
-             rel="noopener noreferrer">
-            <img src="homecredit-awareness-homelove.jpg"
-                 alt="Logitech — Lazada Top 1, Computer Accessories, 12.12 Mega Sale"
-                 loading="eager">
+          <a href="homecredit-awareness-homelove.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="homecredit-awareness-homelove.jpg" width="2000" height="2000" alt="Home Love activity: a volunteer in a red scarf giving school supplies to children, supporting 7,800+ people in need nationwide" loading="lazy">
           </a>
         </div>
         <figcaption>Awareness · Home Credit Vietnam 2025 Activity · Home Love</figcaption>
@@ -191,25 +134,17 @@
 
       <figure class="achievement-item">
         <div class="achievement-frame">
-          <a href="homecredit-awareness-bestinasia.jpg"
-             target="_blank"
-             rel="noopener noreferrer">
-            <img src="homecredit-awareness-bestinasia.jpg"
-                 alt="Logitech — Lazada Top 1, Computer Accessories, 12.12 Mega Sale"
-                 loading="eager">
+          <a href="homecredit-awareness-bestinasia.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="homecredit-awareness-bestinasia.jpg" width="2895" height="1447" alt="Home Credit Vietnam recognised among HR Asia Best Companies to Work for in Asia 2025, shown with the award trophy" loading="lazy">
           </a>
         </div>
         <figcaption>Awareness · Home Credit Vietnam 2025 Award · Best Company in Asia</figcaption>
-      </figure> 
+      </figure>
 
       <figure class="achievement-item">
         <div class="achievement-frame">
-          <a href="homecredit-awareness-top10.jpg"
-             target="_blank"
-             rel="noopener noreferrer">
-            <img src="homecredit-awareness-top10.jpg"
-                 alt="Logitech — Lazada Top 1, Computer Accessories, 12.12 Mega Sale"
-                 loading="eager">
+          <a href="homecredit-awareness-top10.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="homecredit-awareness-top10.jpg" width="1200" height="1200" alt="Home Credit named a Top 10 sustainable enterprise in Vietnam, Commerce and Services group, CSI 2025" loading="lazy">
           </a>
         </div>
         <figcaption>Awareness · Home Credit Vietnam 2025 Award · Top 10 Company in Vietnam</figcaption>
@@ -217,30 +152,22 @@
 
       <figure class="achievement-item">
         <div class="achievement-frame">
-          <a href="homecredit-awareness-top50sus.jpg"
-             target="_blank"
-             rel="noopener noreferrer">
-            <img src="homecredit-awareness-top50sus.jpg"
-                 alt="Logitech — Lazada Top 1, Computer Accessories, 12.12 Mega Sale"
-                 loading="eager">
+          <a href="homecredit-awareness-top50sus.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="homecredit-awareness-top50sus.jpg" width="1920" height="960" alt="Home Credit awarded in the Top 50 Corporate Sustainability Awards 2025, shown with the certificate plaque" loading="lazy">
           </a>
         </div>
         <figcaption>Awareness · Home Credit Vietnam 2025 Award · Top 50 Corporate Sustanibility in Vietnam</figcaption>
       </figure>
-  
+
       <figure class="achievement-item">
         <div class="achievement-frame">
-          <a href="homecredit-awareness-top100.jpg"
-             target="_blank"
-             rel="noopener noreferrer">
-            <img src="homecredit-awareness-top100.jpg"
-                 alt="Logitech — TikTok ROAS >100X, Computer Accessories, 9.9 Mega Sale"
-                 loading="eager">
+          <a href="homecredit-awareness-top100.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="homecredit-awareness-top100.jpg" width="2048" height="1365" alt="Home Credit team receiving the Vietnam Best Places to Work Top 100 award 2025, the fourth year in a row" loading="lazy">
           </a>
         </div>
-        <figcaption>Awareness · Home Credit Vietnam 2025 Award · Top 100 Best Places To Work in Vietnam</figcaption>  
-     </figure>
-    </div>
+        <figcaption>Awareness · Home Credit Vietnam 2025 Award · Top 100 Best Places To Work in Vietnam</figcaption>
+      </figure>
+      </div>
   </section>
 </section>
 </main>
