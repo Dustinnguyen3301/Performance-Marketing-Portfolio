@@ -400,6 +400,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .certification-entry { padding: 20px 0; border-bottom: 1px solid var(--line); }
 .certification-entry h3 { font-size: .95rem; }
 .certification-entry p { margin: 6px 0 0; font-size: .78rem; color: var(--muted); }
+.credential-link { display: inline-block; color: #93b4ff; font: .72rem/1.7 var(--mono); letter-spacing: .02em; border-bottom: 1px solid transparent; transition: border-color .2s, color .2s; }
+.credential-link:hover, .credential-link:focus-visible { color: #fff; border-bottom-color: currentColor; }
+.certification-entry .credential-link { margin-top: 10px; }
 @media (max-width:640px) { .credentials-section { gap: 44px; padding-bottom: 65px; } .education-card { padding: 22px; align-items: flex-start; gap: 16px; } .education-mark { width: 48px; height: 48px; font-size: .75rem; } .credentials-section h3 { font-size: 1rem; } .certification-grid { grid-template-columns: 1fr; gap: 14px; } .certification-card { padding: 24px; } }
 /* Nhãn WHAT I DO, SELECTED WORK, ABOUT ME... */
 .eyebrow {
