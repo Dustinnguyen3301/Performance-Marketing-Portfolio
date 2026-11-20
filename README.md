@@ -2,7 +2,7 @@
 
 Static portfolio site for Dustin Nguyen, a performance marketing specialist in Vietnam. It has a landing page and five case studies (Avène, Logitech, and three Home Credit projects), built with plain HTML and one shared `style.css`.
 
-Live site: https://dustinnguyen3301.github.io/Performance-Marketing-Portfolio/
+Live site: https://dustinngmarketing.com/
 
 ## Preview locally
 

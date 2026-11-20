@@ -1,7 +1,7 @@
 # CLAUDE.md — Performance Marketing Portfolio
 
 Personal portfolio of Dustin Nguyen (Performance Marketing Specialist, Vietnam).
-Live: https://dustinnguyen3301.github.io/Performance-Marketing-Portfolio/
+Live: https://dustinngmarketing.com/
 
 ## Stack
 - Plain static HTML + one shared `style.css`. No framework, no build step, no JS bundler.
