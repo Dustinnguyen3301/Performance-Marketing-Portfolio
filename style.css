@@ -174,9 +174,10 @@ button { font: inherit; }
 }
 
 
-/* Selected Work — categorized project rows */
+/* Selected Work: categorized project rows */
 .work-categories { display: flex; flex-direction: column; gap: 42px; }
 .work-category { min-width: 0; }
+.project-avene + .project-logitech { margin-top: 24px; }
 .work-category-title {
   margin: 0 0 18px;
   color: var(--text);
@@ -275,7 +276,7 @@ button { font: inherit; }
   .project-metric__label, .project-metric__period { text-align: left; }
 }
 
-/* Project themes — shared by the overview and case studies. */
+/* Project themes: shared by the overview and case studies. */
 .project-avene { --brand-color: #F36F21; }
 .project-logitech { --brand-color: #111111; }
 .project-homecredit { --brand-color: #E31E24; }
@@ -363,7 +364,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .about-section { grid-template-columns: minmax(0,.85fr) minmax(0,1.15fr); gap: clamp(32px,5vw,72px); }
 .about-portrait { position: relative; margin: 0; width: 100%; max-width: 440px; aspect-ratio: 4 / 5; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: radial-gradient(ellipse at 50% 20%, #2563eb22, transparent 70%), #191919; }
 .about-photo { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center 35%; }
-.portrait-placeholder { height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; color: var(--muted); font: .7rem var(--mono); }
+.portrait-placeholder { position: absolute; inset: 0; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; color: var(--muted); font: .7rem var(--mono); }
 .portrait-monogram { color: #3b82f655; font: 800 clamp(5rem,12vw,9rem)/1 var(--font); letter-spacing: -.08em; }
 .about-content { min-width: 0; }
 .about-section .about-content h2 { font-size: clamp(1.8rem,3.65vw,3rem); font-weight: 800; line-height: 1.14; letter-spacing: -.06em; }
