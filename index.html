@@ -24,7 +24,7 @@
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Person","name":"Dustin Nguyen","jobTitle":"Performance Marketing Specialist","url":"https://dustinnguyen3301.github.io/Performance-Marketing-Portfolio/","sameAs":["https://www.linkedin.com/in/nguyen-thanh-nguyen-090122398/"]}
   </script>
-  <link rel="stylesheet" href="style.css?v=16">
+  <link rel="stylesheet" href="style.css?v=17">
 </head>
 <body>
   <header class="site-header">
@@ -36,11 +36,12 @@
     <nav class="main-nav" aria-label="Main navigation">
       <a class="nav-link active" href="#home">Home</a>
       <a class="nav-link" href="#expertise">Expertise</a>
+      <a class="nav-link" href="#process">Process</a>
       <a class="nav-link" href="#work">Portfolio</a>
       <a class="nav-link" href="#about">About</a>
     </nav>
 
-    <a class="header-cta" href="#contact">Let’s Connect <span aria-hidden="true">↗</span></a>
+    <a class="header-cta" href="#contact">Connect now <span aria-hidden="true">↗</span></a>
     <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
       <span></span><span></span>
     </button>
@@ -49,14 +50,20 @@
   <main>
     <section class="hero section-wrap" id="home">
       <div class="hero-content">
-        <div class="availability"><span class="status-dot"></span> Open to opportunities</div>
+        <div class="hero-intro">
+          <img class="hero-avatar" src="portrait.jpg?v=1" alt="" width="64" height="64">
+          <div class="hero-intro__text"><span class="hero-hello">Hi, I’m Dustin Nguyen</span><span class="hero-role">Based in Vietnam, I specialize in helping you with</span></div>
+        </div>
         <h1>Turning Data Into<br><span class="accent">Business Growth.</span></h1>
         <p class="hero-copy">
           I plan and optimize paid media across search, social and e-commerce platforms, and turn performance data into clear decisions that grow revenue. I’ve worked with 20+ brands across different industries, managing over VND 5B in media spend each month.
         </p>
         <div class="hero-actions">
-          <a class="button button-secondary" href="#expertise">Explore Expertise </a>
-          <a class="button button-primary" href="#work">View My Work <span aria-hidden="true">→</span></a>
+          <button class="button button-primary contact-trigger" type="button" aria-haspopup="dialog" aria-controls="contact-dialog">Connect now <span aria-hidden="true">↗</span></button>
+          <a class="button button-secondary" href="#work">View My Work <span aria-hidden="true">→</span></a>
+          <!-- Hidden until cv.pdf is added to the repo root:
+          <a class="button button-ghost" href="cv.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
+          -->
         </div>
         <div class="hero-meta">
           <span>SEARCH · SOCIAL</span>
@@ -71,19 +78,27 @@
         <dl class="experience-stats">
           <div class="experience-budget">
             <dt>Average media budget managed</dt>
-            <dd><span class="experience-currency">VND</span> <span class="experience-budget-value">5B<span class="experience-plus">+</span></span><span class="experience-period">/ month</span></dd>
+            <dd><span class="experience-currency">VND</span> <span class="experience-budget-value"><span data-count="5">5</span>B<span class="experience-plus">+</span></span><span class="experience-period">/ month</span></dd>
           </div>
           <div class="experience-stat">
             <dt>Brands</dt>
-            <dd>20<span class="experience-plus">+</span></dd>
+            <dd><span data-count="20">20</span><span class="experience-plus">+</span></dd>
             <p>Across four<br>industries</p>
           </div>
           <div class="experience-stat">
             <dt>Analytics &amp; attribution tools</dt>
-            <dd>5<span class="experience-plus">+</span></dd>
+            <dd><span data-count="5">5</span><span class="experience-plus">+</span></dd>
             <p>GA4 · AppsFlyer<br>Firebase · Branch</p>
           </div>
         </dl>
+        <div class="experience-results" aria-label="Headline results">
+          <p class="experience-results__label">Headline results</p>
+          <div class="experience-results__grid">
+            <a class="result-chip" href="homecredit-customer-acquisition.html"><span class="result-chip__value">+<span data-count="41">41</span>%</span><span class="result-chip__label">Contracts · Home Credit</span></a>
+            <a class="result-chip" href="logitech.html"><span class="result-chip__value"><span data-count="22.1" data-decimals="1">22.1</span>x</span><span class="result-chip__label">ROAS · Logitech</span></a>
+            <a class="result-chip" href="avene.html"><span class="result-chip__value">+<span data-count="160">160</span>%</span><span class="result-chip__label">Revenue · Avène</span></a>
+          </div>
+        </div>
         <div class="experience-industries" aria-label="Industry experience">
           <span>Finance</span>
           <span>Retail</span>
@@ -95,17 +110,54 @@
     
     </section>
 
+    <div class="platform-strip" aria-label="Platforms and tools I work with">
+      <div class="platform-track">
+        <ul class="platform-list">
+          <li>Facebook</li><li>Google Search</li><li>YouTube</li><li>TikTok</li><li>Shopee</li><li>Lazada</li><li>Tiki</li><li>Zalo</li><li>Threads</li><li class="is-tool">GA4</li><li class="is-tool">AppsFlyer</li><li class="is-tool">Firebase</li><li class="is-tool">Branch</li>
+        </ul>
+        <ul class="platform-list" aria-hidden="true">
+          <li>Facebook</li><li>Google Search</li><li>YouTube</li><li>TikTok</li><li>Shopee</li><li>Lazada</li><li>Tiki</li><li>Zalo</li><li>Threads</li><li class="is-tool">GA4</li><li class="is-tool">AppsFlyer</li><li class="is-tool">Firebase</li><li class="is-tool">Branch</li>
+        </ul>
+      </div>
+    </div>
+
     <section class="content-section section-wrap" id="expertise">
       <div class="section-heading">
         <p class="eyebrow">WHAT I DO</p>
         <h2>Impact across<br><span class="accent">the full journey.</span></h2>
       </div>
       <div class="expertise-grid">
-        <article class="expertise-card"><span class="card-index">01 / AWARENESS</span><h3>Brand Awareness</h3><p>Build reach and recall with the right audience, so the brand is already known when people are ready to buy. Up to +125% total user reach year on year.</p></article>
-        <article class="expertise-card"><span class="card-index">02 / CONSIDERATION</span><h3>Consideration</h3><p>Show up while people search and compare, with search, social and retargeting that keep the brand on their shortlist.</p></article>
-        <article class="expertise-card"><span class="card-index">03 / CONVERSION</span><h3>Acquisition &amp; Sales</h3><p>Turn interest into orders, sign-ups and contracts at a cost the business can scale. Up to +41% more contracts and 22.1x ROAS.</p></article>
-        <article class="expertise-card"><span class="card-index">04 / RETENTION</span><h3>Retention &amp; Growth</h3><p>Bring existing customers back and grow their value through app re-engagement and customer-data audiences. Up to +25% monthly active users.</p></article>
+        <article class="expertise-card service-card reveal"><span class="card-index">01 / AWARENESS</span><h3>Brand Awareness</h3><p>Build reach and recall with the right audience, so the brand is already known when people are ready to buy.</p>
+          <p class="service-label">What you get</p><ul class="service-list"><li>Audience &amp; channel plan</li><li>Reach and frequency planning</li><li>Video creative testing</li></ul>
+          <p class="service-kpi"><span>Measured by</span> Reach · Frequency · CPM · View rate</p>
+          <a class="service-proof" href="homecredit-brand-awareness.html"><span class="service-proof__label">Proven</span><span class="service-proof__value">+125% total user reach</span><span class="service-proof__meta">Home Credit · Brand Awareness <span aria-hidden="true">→</span></span></a></article>
+        <article class="expertise-card service-card reveal"><span class="card-index">02 / CONSIDERATION</span><h3>Consideration</h3><p>Show up while people search and compare, with search, social and retargeting that keep the brand on their shortlist.</p>
+          <p class="service-label">What you get</p><ul class="service-list"><li>Search keyword &amp; audience structure</li><li>Retargeting by funnel stage</li><li>Landing page feedback from data</li></ul>
+          <p class="service-kpi"><span>Measured by</span> Impression share · CTR · CPC · Cost per lead</p>
+          <a class="service-proof" href="homecredit-brand-awareness.html"><span class="service-proof__label">Proven</span><span class="service-proof__value">Brand search impression share 78% → 90%</span><span class="service-proof__meta">Home Credit · Brand Awareness <span aria-hidden="true">→</span></span></a></article>
+        <article class="expertise-card service-card reveal"><span class="card-index">03 / CONVERSION</span><h3>Acquisition &amp; Sales</h3><p>Turn interest into orders, sign-ups and contracts at a cost the business can scale.</p>
+          <p class="service-label">What you get</p><ul class="service-list"><li>Full-funnel campaign build</li><li>Marketplace ads on Shopee &amp; Lazada</li><li>Tracking setup and bid &amp; budget optimisation</li></ul>
+          <p class="service-kpi"><span>Measured by</span> ROAS · CPA · Conversion rate · Revenue</p>
+          <a class="service-proof" href="homecredit-customer-acquisition.html"><span class="service-proof__label">Proven</span><span class="service-proof__value">+41% cash loan contracts</span><span class="service-proof__meta">Home Credit · Cash Loan Acquisition <span aria-hidden="true">→</span></span></a></article>
+        <article class="expertise-card service-card reveal"><span class="card-index">04 / RETENTION</span><h3>Retention &amp; Growth</h3><p>Bring existing customers back and grow their value through app re-engagement and customer-data audiences.</p>
+          <p class="service-label">What you get</p><ul class="service-list"><li>App re-engagement campaigns</li><li>Customer-data audiences</li><li>Attribution with AppsFlyer &amp; Firebase</li></ul>
+          <p class="service-kpi"><span>Measured by</span> MAU · Retention rate · Re-engagement CPA</p>
+          <a class="service-proof" href="homecredit-app-retention.html"><span class="service-proof__label">Proven</span><span class="service-proof__value">+25% monthly active users</span><span class="service-proof__meta">Home Credit · App Retention <span aria-hidden="true">→</span></span></a></article>
       </div>
+    </section>
+
+    <section class="content-section section-wrap process-section" id="process" aria-labelledby="process-title">
+      <div class="section-heading section-heading-row">
+        <div><p class="eyebrow">HOW I WORK</p><h2 id="process-title">From audit<br><span class="accent">to business results.</span></h2></div>
+        <p class="section-intro">The same five steps on every account, so you always know what happens next.</p>
+      </div>
+      <ol class="process-grid">
+          <li class="process-step reveal"><span class="process-index">01</span><h3>Audit</h3><p>Review the account, tracking and past data to find the real business problem before spending more.</p></li>
+          <li class="process-step reveal"><span class="process-index">02</span><h3>Plan</h3><p>Set objectives and KPIs, split the budget across channels and define audiences and creative tests.</p></li>
+          <li class="process-step reveal"><span class="process-index">03</span><h3>Launch</h3><p>Build the campaign structure, QA tracking end to end, and go live with clear test hypotheses.</p></li>
+          <li class="process-step reveal"><span class="process-index">04</span><h3>Optimize</h3><p>Weekly decisions on bids, budgets, audiences and creatives, driven by what the data shows.</p></li>
+          <li class="process-step reveal"><span class="process-index">05</span><h3>Report</h3><p>Clear reports that tie spend to business results, with the next actions already decided.</p></li>
+      </ol>
     </section>
 
     <section class="content-section section-wrap" id="work">
@@ -116,7 +168,7 @@
         <div class="work-categories">
           <div class="work-category">
             <h3 class="work-category-title">Retail &amp; E-commerce</h3>
-            <a class="project-row project-avene" href="avene.html" aria-label="View Avène case study">
+            <a class="reveal project-row project-avene" href="avene.html" aria-label="View Avène case study">
               <div class="project-brand"><span class="project-name">Avène</span></div>
               <div class="project-summary">
                 <h4>Sales Conversion</h4>
@@ -130,7 +182,7 @@
               <span class="project-arrow">View project <span aria-hidden="true">↗</span></span>
             </a>
 
-          <a class="project-row project-logitech" href="logitech.html" aria-label="View Logitech case study">
+          <a class="reveal project-row project-logitech" href="logitech.html" aria-label="View Logitech case study">
             <div class="project-brand"><span class="project-name">Logitech</span></div>
             <div class="project-summary">
               <h4>Sales Conversion</h4>
@@ -148,7 +200,7 @@
         <div class="work-category">
           <h3 class="work-category-title work-category-title--finance">Financial Services</h3>
           <!-- Home Credit: Brand Awareness -->
-<a class="project-row project-homecredit"
+<a class="reveal project-row project-homecredit"
    href="homecredit-brand-awareness.html"
    aria-label="View Home Credit Brand Awareness case study">
 
@@ -173,7 +225,7 @@
 </a>
 
 <!-- Home Credit: App Retention -->
-<a class="project-row project-homecredit"
+<a class="reveal project-row project-homecredit"
    href="homecredit-app-retention.html"
    aria-label="View Home Credit App Retention case study">
 
@@ -198,7 +250,7 @@
 </a>
 
 <!-- Home Credit: Customer Acquisition -->
-<a class="project-row project-homecredit"
+<a class="reveal project-row project-homecredit"
    href="homecredit-customer-acquisition.html"
    aria-label="View Home Credit Customer Acquisition case study">
 
@@ -271,7 +323,7 @@
         <div class="contact-card"><span class="contact-label">LINKEDIN</span><a href="https://www.linkedin.com/in/nguyen-thanh-nguyen-090122398/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a></div>
         <div class="contact-card"><span class="contact-label">PHONE</span><a href="tel:+84829299553">+84 829 299 553</a><small>Vietnam only</small></div>
       </div>
-      <button class="button button-primary contact-trigger" type="button" aria-haspopup="dialog" aria-controls="contact-dialog">Contact now <span aria-hidden="true">↗</span></button>
+      <button class="button button-primary contact-trigger" type="button" aria-haspopup="dialog" aria-controls="contact-dialog">Connect now <span aria-hidden="true">↗</span></button>
       <dialog id="contact-dialog" class="contact-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-copy">
         <form method="dialog"><button class="dialog-close" aria-label="Close contact options">×</button></form>
         <p class="eyebrow">LET’S CONNECT</p><h3 id="dialog-title">How would you like to connect?</h3>
@@ -280,6 +332,9 @@
           <div class="contact-option"><span class="contact-label">EMAIL</span><a href="mailto:thanhnguyen3301.work@gmail.com">thanhnguyen3301.work@gmail.com</a><small>Send a message</small></div>
           <div class="contact-option"><span class="contact-label">PHONE</span><a href="tel:+84829299553">+84 829 299 553</a><small>Vietnam only · Calls within Vietnam</small></div>
         </div>
+        <!-- Hidden until cv.pdf is added to the repo root:
+        <a class="button button-ghost dialog-cv" href="cv.pdf" download>Download CV (PDF) <span aria-hidden="true">↓</span></a>
+        -->
       </dialog>
     </section>
   </main>
@@ -308,13 +363,35 @@
     }));
 
     const contactDialog = document.querySelector('#contact-dialog');
-    document.querySelector('.contact-trigger')?.addEventListener('click', () => contactDialog.showModal());
+    document.querySelectorAll('.contact-trigger').forEach(btn => btn.addEventListener('click', () => contactDialog.showModal()));
     contactDialog?.addEventListener('click', event => {
       const rect = contactDialog.getBoundingClientRect();
       if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) contactDialog.close();
     });
 
     document.querySelector('#year').textContent = new Date().getFullYear();
+    // NEW: count-up + reveal on scroll (skipped when the user prefers reduced motion)
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduceMotion && 'IntersectionObserver' in window) {
+      const countUp = el => {
+        const target = parseFloat(el.dataset.count), dec = +(el.dataset.decimals || 0), dur = 1600, t0 = performance.now();
+        const animDec = target < 10 ? Math.max(dec, 1) : dec; // small numbers tick in decimals so 0→5 looks smooth
+        const tick = now => {
+          const p = Math.min(Math.max((now - t0) / dur, 0), 1), eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = p < 1 ? (target * eased).toFixed(animDec) : target.toFixed(dec);
+          if (p < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      };
+      const io = new IntersectionObserver(entries => entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        if (e.target.dataset.count) countUp(e.target); else e.target.classList.add('is-visible');
+        io.unobserve(e.target);
+      }), { threshold: .2 });
+      document.querySelectorAll('[data-count]').forEach(el => { el.textContent = (0).toFixed(+(el.dataset.decimals || 0)); io.observe(el); });
+      document.documentElement.classList.add('js-reveal');
+      document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    }
   </script>
 </body>
 </html>
