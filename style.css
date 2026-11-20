@@ -53,11 +53,12 @@ button { font: inherit; }
 
 /* Hero */
 .hero { min-height: 650px; display: grid; grid-template-columns: 1.08fr .92fr; align-items: center; gap: 54px; padding-block: 72px 90px; position: relative; }
-.hero-content { position: relative; z-index: 1; }
+.hero-content { position: relative; z-index: 1; min-width: 0; container-type: inline-size; }
 .availability { display: inline-flex; align-items: center; gap: 9px; border: 1px solid rgba(37,99,235,.45); color: #93B4FF; background: rgba(37,99,235,.10); border-radius: 999px; padding: 8px 14px; font: 500 .8rem var(--mono); margin-bottom: 28px; }
 .status-dot { width: 7px; height: 7px; background: var(--accent-bright); border-radius: 50%; box-shadow: 0 0 12px var(--accent); }
 .eyebrow { font: 500 .78rem var(--mono); letter-spacing: .12em; color: var(--muted); margin: 0 0 18px; }
-.hero h1 { font-size: clamp(3.6rem, 7.4vw, 6.5rem); line-height: .99; letter-spacing: -.075em; margin: 0; font-weight: 800; }
+/* Font is capped by the column width (13cqi) so the headline always stays on two lines. */
+.hero h1 { font-size: min(clamp(3.6rem, 7.4vw, 6.5rem), 13cqi); line-height: .99; letter-spacing: -.075em; margin: 0; font-weight: 800; }
 .accent { color: var(--accent-bright); }
 .hero-copy { color: var(--muted); max-width: 580px; font-size: 1rem; line-height: 1.9; margin: 28px 0 30px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
@@ -147,7 +148,7 @@ button { font: inherit; }
   .main-nav { gap: 0; }.nav-link { padding-inline: 10px; }
   .hero { grid-template-columns: 1fr; gap: 38px; padding-block: 60px 70px; }
   .experience-panel { width: 100%; max-width: 620px; }
-  .hero h1 { font-size: clamp(3.7rem, 10vw, 6rem); }
+  .hero h1 { font-size: min(clamp(3.7rem, 10vw, 6rem), 13cqi); }
   .metrics { grid-template-columns: repeat(2, 1fr); }
   .metric:nth-child(2) { border-right: 0; }.metric:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
   .metric { padding: 18px; }.metric:first-child { padding-left: 18px; }
@@ -161,7 +162,7 @@ button { font: inherit; }
   .main-nav.is-open { display: flex; }.nav-link { padding: 12px; }
   .hero { padding-block: 50px 60px; gap: 32px; }
   .availability { margin-bottom: 22px; }
-  .hero h1 { font-size: clamp(3.1rem, 14vw, 4.8rem); }
+  .hero h1 { font-size: min(clamp(3.1rem, 14vw, 4.8rem), 13cqi); }
   .hero-copy { font-size: .9rem; margin-block: 22px; }
   .hero-meta { margin-top: 30px; font-size: .72rem; }
   .experience-panel { padding: 22px; }
