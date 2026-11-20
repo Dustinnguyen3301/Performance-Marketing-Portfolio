@@ -491,14 +491,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   color: #b4b4b4;
 }
 .experience-industries {
-  display: grid;
-  grid-template-columns: repeat(3, max-content);
+  display: flex;
+  flex-wrap: wrap;
   gap: 7px;
-}
-
-.experience-industries .industry-new-line {
-  grid-column: 1 / -1;
-  justify-self: start;
 }
 .work-category h3.work-category-title {
   font-family: "Manrope", sans-serif;
@@ -541,6 +536,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .result-chip:hover { border-color: rgba(59,130,246,.6); background: rgba(37,99,235,.08); }
 .result-chip__value { font-size: clamp(1.4rem, 2.2vw, 1.8rem); font-weight: 800; letter-spacing: -.05em; color: var(--text); }
 .result-chip__label { font: .68rem/1.4 var(--mono); color: #9a9a9a; letter-spacing: .02em; }
+.result-chip__metric, .result-chip__brand { display: block; white-space: nowrap; }
 .experience-stats { margin-bottom: 0; }
 .experience-stat { padding-bottom: 22px; }
 
