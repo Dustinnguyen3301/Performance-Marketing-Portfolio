@@ -128,5 +128,17 @@
     }));
     document.querySelector('#year').textContent = new Date().getFullYear();
   </script>
+  <script>
+    // Upwork view: opened from work.html, so keep visitors on pages without contact details.
+    (() => {
+      let upwork = new URLSearchParams(location.search).get('view') === 'upwork';
+      try { if (upwork) sessionStorage.setItem('view', 'upwork'); else upwork = sessionStorage.getItem('view') === 'upwork'; } catch (e) {}
+      if (!upwork) return;
+      document.querySelectorAll('a[href^="index.html"]').forEach(a => {
+        const hash = a.getAttribute('href').split('#')[1] || 'home';
+        if (hash === 'contact') a.remove(); else a.setAttribute('href', 'work.html#' + hash);
+      });
+    })();
+  </script>
 </body>
 </html>
