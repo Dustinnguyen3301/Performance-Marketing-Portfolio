@@ -606,3 +606,40 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .platform-list[aria-hidden] { display: none; }
   .js-reveal .reveal:not(.is-visible) { opacity: 1; transform: none; }
 }
+
+/* Case-study data chart (Home Credit Cash Loan evidence) */
+.data-case .avene-copy { margin-bottom: 22px; }
+.dc-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin: 0; }
+.dc-stats > div { padding: 18px 20px; background: var(--brand-wash, var(--case-tint)); border-left: 2px solid var(--brand-rule); border-radius: 0 8px 8px 0; }
+.dc-stats strong { display: block; color: var(--brand-heading, var(--case-text)); font-size: clamp(1.35rem, 2.4vw, 1.8rem); font-weight: 800; letter-spacing: -.03em; line-height: 1.2; }
+.dc-stats span { display: block; margin-top: 6px; color: var(--case-body); font-size: .86rem; line-height: 1.5; }
+.dc-caption { margin: 12px 0 0; color: var(--case-meta); font-size: .82rem; }
+.dc-figure { margin: 26px 0 0; padding: 22px 22px 16px; border: 1px solid var(--case-line); border-radius: 10px; background: #fff; }
+.dc-legend { display: flex; gap: 22px; font-size: .84rem; color: var(--case-strong); margin-bottom: 8px; }
+.dc-legend span { display: inline-flex; align-items: center; gap: 8px; }
+.dc-key { width: 18px; height: 2px; border-radius: 2px; display: inline-block; }
+.dc-key.dc-a { background: #2563EB; } .dc-key.dc-c { background: #b51420; }
+.dc-plot { position: relative; }
+.dc-svg { display: block; width: 100%; height: auto; font-family: var(--font); }
+.dc-grid { stroke: #ececec; stroke-width: 1; }
+.dc-base { stroke: #9a9a9a; stroke-width: 1; stroke-dasharray: 3 4; }
+.dc-tick { fill: var(--case-label); font-size: 12px; }
+.dc-after { fill: #fff5f5; }
+.dc-marker { stroke: #b51420; stroke-width: 1; stroke-dasharray: 4 4; }
+.dc-note { fill: #b51420; font-size: 12px; font-weight: 700; }
+.dc-line { fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.dc-line.dc-a { stroke: #2563EB; } .dc-line.dc-c { stroke: #b51420; }
+.dc-label { fill: var(--case-strong); font-size: 12px; font-weight: 700; }
+.dc-cross { stroke: #9a9a9a; stroke-width: 1; }
+.dc-dot { stroke: #fff; stroke-width: 2; } .dc-dot.dc-a { fill: #2563EB; } .dc-dot.dc-c { fill: #b51420; }
+.dc-hit { fill: transparent; cursor: crosshair; }
+.dc-svg [hidden] { display: none; }
+.dc-tip { position: absolute; top: 0; pointer-events: none; background: #111; color: #f5f5f5; font-size: .8rem; line-height: 1.55; padding: 8px 11px; border-radius: 6px; white-space: nowrap; transform: translateX(-50%); }
+.dc-tip b { font-weight: 700; }
+.dc-figure figcaption { margin-top: 10px; color: var(--case-meta); font-size: .8rem; }
+.dc-table { margin-top: 10px; font-size: .82rem; color: var(--case-body); }
+.dc-table summary { cursor: pointer; color: var(--case-strong); font-weight: 700; }
+.dc-table table { margin-top: 10px; border-collapse: collapse; width: 100%; max-width: 420px; }
+.dc-table th, .dc-table td { text-align: left; padding: 4px 10px 4px 0; border-bottom: 1px solid var(--case-line); }
+@media (max-width: 900px) { .dc-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .dc-figure { padding: 14px 10px 12px; } .dc-plot { overflow-x: auto; -webkit-overflow-scrolling: touch; } .dc-svg { min-width: 640px; } }
