@@ -141,6 +141,10 @@ button { font: inherit; }
 .contact-section .eyebrow { margin-bottom: 20px; }.contact-section .button { margin-top: 30px; }
 .site-footer { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-block: 25px; border-top: 1px solid var(--line); color: #8c8c8c; font-size: .82rem; }
 .back-top { color: var(--muted); }.back-top:hover { color: var(--accent-bright); }
+.footer-social { display: flex; gap: 10px; }
+.footer-social a { display: inline-grid; place-items: center; width: 36px; height: 36px; border: 1px solid var(--line); border-radius: 50%; color: var(--muted); transition: .2s ease; }
+.footer-social a:hover, .footer-social a:focus-visible { color: var(--accent-bright); border-color: var(--accent-bright); }
+.footer-social svg { width: 16px; height: 16px; fill: currentColor; }
 
 /* Responsive */
 @media (max-width: 900px) {
