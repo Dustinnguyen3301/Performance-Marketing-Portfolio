@@ -641,6 +641,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .dc-table summary { cursor: pointer; color: var(--case-strong); font-weight: 700; }
 .dc-table table { margin-top: 10px; border-collapse: collapse; width: 100%; max-width: 420px; }
 .dc-table th, .dc-table td { text-align: left; padding: 4px 10px 4px 0; border-bottom: 1px solid var(--case-line); }
+.dc-stats--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 @media (max-width: 1000px) { .dc-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .dc-figure + .dc-figure { margin-top: 20px; }
 .dc-fig-title { margin: 0 0 8px; color: var(--case-strong); font-size: .9rem; font-weight: 800; }
